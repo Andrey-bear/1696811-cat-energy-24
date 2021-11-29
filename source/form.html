@@ -27,13 +27,16 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="questionnaire">
+      <section class="title-block">
         <div class="container">
-          <h1 class="container__title">Подбор программы</h1>
-          <p class="container__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <h1 class="title-block__title">Подбор программы</h1>
+          <p class="title-block__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         </div>
+      </section>
+      <section class="questionnaire">
+        <h2 class="visually-hidden">Анкета</h2>
         <form class="questionnaire__form form" action="https://echo.htmlacademy.ru" method="GET">
-          <fieldset class="form__fieldset fields fields--personal">
+          <fieldset class="form__fieldset fields">
             <ul class="fields__list">
               <li class="fields__item fields__item--info">
                 <label class="fields__label" for="form-name">Имя:*</label>
@@ -49,7 +52,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__fieldset fields fields--program">
+          <fieldset class="form__fieldset fields">
             <ul class="fields__list">
               <li class="fields__item fields__item--radio">
                 <input class="fields__input fields__input--radio" type="radio" id="form-slim" name="program" value="slim" checked>
@@ -65,8 +68,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__fieldset fields fields--contacts">
-            <h2 class="fields__title">Контактные данные (владельца кота)</h2>
+          <fieldset class="form__fieldset fields">
+            <legend class="fields__title">Контактные данные (владельца кота)</legend>
             <ul class="fields__list">
               <li class="fields__item fields__item--info">
                 <label class="fields__label" for="form-email">E-mail:*</label>
@@ -97,11 +100,11 @@
             </ul>
           </fieldset>
           <fieldset class="form__fieldset fields fields--descr">
-            <h2 class="fields__title">Комментарий</h2>
-            <textarea class="fields__textarea" placeholder="Расскажите обо всех повадках кота" name="comments"></textarea>
+            <label class="fields__title" for="text">Комментарий</label>
+            <textarea class="fields__textarea" placeholder="Расскажите обо всех повадках кота" id="text" name="comments"></textarea>
           </fieldset>
           <fieldset class="form__fieldset fields fields--add">
-            <h2 class="fields__title">Дополнительно</h2>
+            <legend class="fields__title">Дополнительно</legend>
             <ul class="fields__list">
               <li class="fields__item fields__item--checkbox">
                 <input class="fields__input fields__input--checkbox" type="checkbox" id="form-sweetener" name="sweetener" checked>
@@ -130,16 +133,16 @@
       <section class="contacts contacts--background">
         <div class="contacts__cooperation container">
           <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <div class="contacts__adress">
-            <p class="contacts__adress-text">ул. Большая Конюшенная, д. 19/8</p>
-            <p class="contacts__adress-text">Санкт-Петербург</p>
+          <div class="contacts__address">
+            <p class="contacts__address-text">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="contacts__address-text">Санкт-Петербург</p>
           </div>
         </div>
         <img class="contacts__image" src="img/map.jpg" alt="Карта">
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wraper container">
+      <div class="page-footer__wrapper container">
         <div class="page-footer__logo logo">
           <a class="logo__link" href="index.html">
             <svg width="128" height="24" viewBox="0 0 128 24" fill="none" xmlns="http://www.w3.org/2000/svg">

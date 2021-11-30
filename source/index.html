@@ -6,27 +6,25 @@
   </head>
   <body class="page-body">
     <header class="page-header">
-      <a class="page-header__logo" href="#">
+      <a class="page-header__logo">
         <img src="img/logo-mobile.svg" alt="Логотип Cat Energy">
       </a>
       <button class="page-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active">Главная</a>
           </li>
-          <li>
-            <a href="catalog.html">Каталог продукции</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li>
-            <a href="form.html">Подбор программы</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
-    </header>
-    <main class="page-main">
       <section class="program">
         <div class="program__content container">
           <h1 class="visually-hidden">Cat energy</h1>
@@ -35,6 +33,8 @@
           <a class="program__button button" href="form.html">Подбор программы</a>
         </div>
       </section>
+    </header>
+    <main class="page-main">
       <section class="categories container">
         <h2 class="visually-hidden">Список программ</h2>
         <ul class="categories__list">
@@ -76,35 +76,33 @@
               <dt class="before-after__number">5 кг</dt>
               <dd class="before-after__description">Снижение веса</dd>
             </div>
-          </dl>
-          <dl class="before-after__list">
             <div class="before-after__item">
               <dt class="before-after__number">60 дней</dt>
               <dd class="before-after__description">Затрачено времени</dd>
             </div>
           </dl>
           <p class="before-after__expenses">Затраты на питание: <span class="before-after__value">15 000 руб.</span></p>
-          <div class="before-after__button button">
-            <button class="button__switch button__switch--before" type="button">Было</button>
-            <button class="button__switch button__switch--after" type="button">Стало</button>
+          <div class="before-after__switch">
+            <button class="before-after__button before-after__button--before" type="button">Было</button>
+            <button class="before-after__button before-after__button--after" type="button">Стало</button>
           </div>
         </div>
       </section>
       <section class="contacts">
         <div class="contacts__cooperation container">
-          <h2>Приглашаем к сотрудничеству дилеров!</h2>
-          <div>
-            <p>ул. Большая Конюшенная, д. 19/8</p>
-            <p>Санкт-Петербург</p>
+          <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <div class="contacts__address">
+            <p class="contacts__address-text">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="contacts__address-text">Санкт-Петербург</p>
           </div>
         </div>
         <img class="contacts__image" src="img/map.jpg" alt="Карта">
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wraper container">
+      <div class="page-footer__wrapper container">
         <div class="page-footer__logo logo">
-          <a class="logo__link" href="index.html">
+          <a class="logo__link">
             <svg width="128" height="24" viewBox="0 0 128 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip1)">
               <path d="M1.6025 22.0513C0.468327 20.3682 -0.0946878 18.3503 -3.57628e-07 16.3077V7.79487C-0.137348 5.73031 0.390413 3.67661 1.50235 1.94872C2.60407 0.615385 4.30673 0 6.81064 0C9.31455 0 10.9171 0.615385 11.9186 1.74359C13.006 3.17255 13.5409 4.96181 13.421 6.76923V8.82051H8.5133V6.46154C8.55294 5.76385 8.45062 5.06533 8.21283 4.41026C8.08573 4.14583 7.88428 3.9264 7.6344 3.78018C7.38452 3.63395 7.09763 3.56763 6.81064 3.58974C6.10955 3.58974 5.60876 3.79487 5.40845 4.30769C5.18187 5.03643 5.08022 5.79984 5.10798 6.5641V17.5385C5.05509 18.2799 5.19324 19.0227 5.50861 19.6923C5.70892 20.2051 6.2097 20.4103 6.9108 20.4103C7.61189 20.4103 8.01252 20.2051 8.21283 19.6923C8.44055 18.9992 8.54239 18.2692 8.5133 17.5385V15.0769H13.421V17.1282C13.5228 18.9651 12.9911 20.7803 11.9186 22.2564C10.9171 23.4872 9.2144 24.1026 6.81064 24.1026C4.40689 24 2.60407 23.3846 1.6025 22.0513Z" fill="#111111"/>

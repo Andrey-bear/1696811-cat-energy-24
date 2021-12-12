@@ -1,0 +1,45 @@
+.fields__label--radio {
+  color: $color-text-title;
+  cursor: pointer;
+}
+
+.fields__label--checkbox {
+  cursor: pointer;
+  color: $color-text;
+}
+
+.fields__title {
+  font-style: normal;
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: none;
+  text-align: left;
+}
+
+.fields__textarea {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-style: normal;
+  border: 1px solid $border-light;
+  box-sizing: border-box;
+  width: 100%;
+  resize: none;
+
+  &:hover {
+    border: 1px solid $radio-border;
+  }
+}
+
+.form__button {
+  border: none;
+}
+
+.form__necessarily {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: none;
+  color: $color-text;
+}

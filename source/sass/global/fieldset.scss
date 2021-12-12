@@ -1,0 +1,44 @@
+.form__fieldset {
+  border: none;
+}
+
+.fields__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fields__item {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $paragraph-light;
+  text-align: left;
+}
+
+.fields__label {
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.fields__input {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $paragraph-light;
+  text-transform: uppercase;
+  border: 1px solid $border-input;
+
+  &:hover {
+    border: 1px solid $radio-border;
+  }
+
+  &:focus {
+    border: 1px solid $paragraph-light;
+  }
+
+  &:invalid {
+    border: 1px solid $input-error;
+  }
+}

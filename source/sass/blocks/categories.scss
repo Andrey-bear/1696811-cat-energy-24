@@ -1,0 +1,21 @@
+.categories__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.categories__title {
+  font-style: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-align: left;
+}
+
+.categories__text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: none;
+  color: $paragraph-light;
+}

@@ -1,0 +1,75 @@
+.before-after {
+  background: $additional-background;
+}
+
+.before-after__result {
+  font-style: normal;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: left;
+  text-transform: none;
+}
+
+.before-after__text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  text-transform: none;
+  color: $paragraph-light;
+}
+
+.before-after__list {
+  margin: 0;
+}
+
+.before-after__item {
+  width: 121px;
+  text-align: center;
+  padding: 13px 0 18px;
+  border: 1px solid $radio-border;
+  border-radius: 5px;
+  position: relative;
+}
+
+.before-after__number {
+  font-style: normal;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.before-after__description {
+  width: 57px;
+  left: 16px;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 12px;
+  color: $paragraph-light;
+  margin: 0 auto;
+  text-transform: lowercase;
+  position: absolute;
+  bottom: -15px;
+  background-color: $additional-background;
+  padding: 2px 16px;
+}
+
+.before-after__expenses {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.before-after__button {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}

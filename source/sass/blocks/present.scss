@@ -1,0 +1,15 @@
+.present__container {
+  background-image: url("../../img/cat-green.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.present__text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: none;
+  color: $main-background;
+  margin: 0 auto;
+}

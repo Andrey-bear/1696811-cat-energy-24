@@ -1,0 +1,14 @@
+.button {
+  padding: 7px 69px;
+  color: $main-background;
+  background: $color-bottom;
+
+  &:hover {
+    background: $color-bottom-hover;
+  }
+
+  &:active {
+    color: $color-text-light;
+    background: $color-bottom-hover;
+  }
+}

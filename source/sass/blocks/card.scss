@@ -1,0 +1,29 @@
+.card__title {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-text-title;
+  text-align: left;
+}
+
+.card__link {
+  color: $color-text-title;
+}
+
+.card__description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: none;
+  color: $paragraph-light;
+}
+
+.card__text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: none;
+  color: $paragraph-light;
+}

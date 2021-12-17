@@ -1,0 +1,11 @@
+.catalog__list {
+  list-style: none;
+}
+
+.catalog__item {
+  border-top: 1px solid $border-light;
+}
+
+.catalog__item:last-child {
+  border-bottom: 1px solid $border-light;
+}

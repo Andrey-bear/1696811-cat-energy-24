@@ -1,0 +1,26 @@
+.social__list {
+  margin: 0;
+  list-style: none;
+  border-top: 1px solid $border-darker;
+  border-bottom: 1px solid $border-darker;
+}
+
+.social__link {
+  &--vkontakte:hover path,
+  &--instagram:hover path {
+    fill: $color-bottom;
+  }
+
+  &--vkontakte:active path,
+  &--instagram:active path {
+    fill: $color-bottom-active;
+  }
+
+  &--facebook:hover path {
+    stroke: $color-bottom;
+  }
+
+  &--facebook:active path {
+    stroke: $color-bottom-active;
+  }
+}

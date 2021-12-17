@@ -1,0 +1,31 @@
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-top: 1px solid $border-light;
+}
+
+.main-nav__item:last-child {
+  border-bottom: 1px solid $border-light;
+}
+
+.main-nav__link {
+  padding: 22px 40px 24px;
+  display: block;
+  color: $color-text;
+}
+
+.main-nav__link:hover {
+  color: $color-text-hover;
+}
+
+.main-nav__link:active {
+  color: $color-text-active;
+}

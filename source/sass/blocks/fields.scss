@@ -1,0 +1,71 @@
+.fields__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fields__item {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $paragraph-light;
+  text-align: left;
+}
+
+.fields__label {
+  white-space: nowrap;
+  cursor: pointer;
+
+  &--radio {
+    color: $color-text-title;
+  }
+
+  &--checkbox {
+    color: $color-text;
+  }
+}
+
+.fields__input {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $paragraph-light;
+  text-transform: uppercase;
+  border: 1px solid $border-input;
+
+  &:hover {
+    border: 1px solid $radio-border;
+  }
+
+  &:focus {
+    border: 1px solid $paragraph-light;
+  }
+
+  &:invalid {
+    border: 1px solid $input-error;
+  }
+}
+
+.fields__title {
+  font-style: normal;
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: none;
+  text-align: left;
+}
+
+.fields__textarea {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-style: normal;
+  border: 1px solid $border-light;
+  box-sizing: border-box;
+  width: 100%;
+  resize: none;
+
+  &:hover {
+    border: 1px solid $radio-border;
+  }
+}

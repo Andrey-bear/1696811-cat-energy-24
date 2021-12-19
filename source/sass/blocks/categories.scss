@@ -1,10 +1,27 @@
+.categories {
+  text-align: left;
+}
+
 .categories__list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
+.categories__item {
+  padding: 21px 22px 18px 22px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background-color: $background-light;
+}
+
 .categories__title {
+  padding-left: 72px;
+  padding-bottom: 5px;
+  margin: 0 0 22px;
   font-style: normal;
   font-size: 24px;
   line-height: 37px;
@@ -12,10 +29,41 @@
 }
 
 .categories__text {
+  margin: 0 0 15px;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 18px;
   text-transform: none;
   color: $paragraph-light;
+}
+
+.categories__slimming {
+  background-image: url("../../img/slimming.svg");
+  background-repeat: no-repeat;
+  background-position: 10% 10%;
+}
+
+.categories__weight-gain {
+  background-image: url("../../img/weight-gain.svg");
+  background-repeat: no-repeat;
+  background-position: 6% 10%;
+}
+
+.categories__link {
+  padding-top: 15px;
+  color: $color-text;
+  border-top: 1px solid $border-darker;
+}
+
+.categories__link:active {
+  color: $color-text-active;
+}
+
+.categories__link:active svg path {
+  fill: $color-text-active;
+}
+
+.categories__link:active svg line {
+  stroke: $color-text-active;
 }

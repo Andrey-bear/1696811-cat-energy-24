@@ -1,4 +1,14 @@
+.contacts__cooperation {
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .contacts__title {
+  width: 40%;
+  margin: 0;
   text-align: left;
   font-style: normal;
   font-size: 16px;
@@ -6,14 +16,22 @@
 }
 
 .contacts__address {
+  width: 50%;
+  margin: 0;
   text-align: left;
 }
 
 .contacts__address-text {
+  margin: 0;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 20px;
   text-transform: none;
   color: $paragraph-light;
+}
+
+.contacts__image {
+  width: 100%;
+  display: block;
 }

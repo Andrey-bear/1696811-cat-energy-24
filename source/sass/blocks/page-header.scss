@@ -1,3 +1,35 @@
 .page-header {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: $main-background;
+}
+
+.page-header__wraper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 0 17px 0;
+}
+
+.page-header__toggle {
+  padding: 10px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 24px;
+  height: 16px;
+  background: transparent;
+  background-image: url("../../img/open-menu.svg");
+  background-repeat: no-repeat;
+}
+
+.page-header__link-logo:hover {
+  opacity: 0.8;
+}
+
+.page-header__link-logo:active {
+  opacity: 0.6;
 }

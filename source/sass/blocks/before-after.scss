@@ -1,8 +1,14 @@
 .before-after {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
   background: $additional-background;
 }
 
 .before-after__result {
+  padding-top: 25px;
+  margin: 0 0 30px;
   font-style: normal;
   font-size: 36px;
   line-height: 40px;
@@ -11,6 +17,7 @@
 }
 
 .before-after__text {
+  margin: 0 0 25px;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-size: 14px;
@@ -20,8 +27,17 @@
   color: $paragraph-light;
 }
 
+.before-after__stats {
+  margin: 0 0 26px;
+  width: 280px;
+}
+
 .before-after__list {
   margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .before-after__item {
@@ -57,9 +73,26 @@
 }
 
 .before-after__expenses {
+  margin: 0 0 42px;
   font-style: normal;
   font-size: 14px;
   line-height: 20px;
+}
+
+.before-after__switch {
+  margin: 0 0 25px;
+}
+
+.before-after__image {
+  margin: 0 0 23px;
+}
+
+.before-after__block {
+  margin: 0 auto;
+  display: flex;flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 190px;
 }
 
 .before-after__button {
@@ -72,4 +105,24 @@
   border: none;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.before-after__progress {
+  width: 70px;
+  height: 7px;
+  padding: 3px 5px;
+  border: 1px solid $radio-border;
+  border-radius: 10px;
+  background-color: $main-background;
+}
+
+.before-after__range {
+  display: none;
+}
+
+.before-after__toggle {
+  width: 50%;
+  height: 7px;
+  border-radius: 10px;
+  background-color: $color-bottom;
 }

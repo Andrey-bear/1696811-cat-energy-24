@@ -1,5 +1,12 @@
 .social__list {
   margin: 0;
+  width: 130px;
+  padding: 20px 75px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   list-style: none;
   border-top: 1px solid $border-darker;
   border-bottom: 1px solid $border-darker;

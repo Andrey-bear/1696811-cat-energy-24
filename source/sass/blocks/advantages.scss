@@ -1,8 +1,11 @@
 .advantages {
+  text-align: left;
   text-transform: none;
+  margin-bottom: 36px;
 }
 
 .advantages__title {
+  margin: 0 0 38px;
   font-style: normal;
   font-size: 36px;
   line-height: 40px;
@@ -12,9 +15,38 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.advantages__item {
+  &--1 {
+    background-image: url("../../img/nature-product.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--2 {
+    background-image: url("../../img/powder.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--3 {
+    background-image: url("../../img/food.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--4 {
+    background-image: url("../../img/clock.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .advantages__text {
+  margin: 0 0 20px;
+  padding-top: 2px;
+  padding-left: 80px;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-size: 14px;

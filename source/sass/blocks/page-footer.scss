@@ -21,3 +21,37 @@
   margin: 0 0 20px;
   padding: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    background: $background-light;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .page-footer__copyright {
+    width: 20%;
+    margin: 0;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+    padding: 0;
+  }
+
+  .page-footer__social {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__logo {
+    padding: 0 120px 0 0;
+  }
+}

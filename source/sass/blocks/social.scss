@@ -31,3 +31,12 @@
     stroke: $color-bottom-active;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    width: 125px;
+    margin: 0;
+    padding: 23px 77px;
+    border: none;
+  }
+}

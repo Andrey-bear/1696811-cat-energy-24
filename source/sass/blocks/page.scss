@@ -13,3 +13,38 @@
   color: $color-text;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .page {
+    margin: 0 auto;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .page__body {
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page {
+    margin: 0 auto;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .page__body {
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+    margin: 0;
+    padding: 0;
+  }
+}

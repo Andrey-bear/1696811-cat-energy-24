@@ -4,13 +4,15 @@
   color: $main-background;
 }
 
-.program__conten {
+.program__content {
+  width: 100%;
+}
+
+.program__wrapper {
+  min-height: 264px;
   background-image: url("../../img/background-cat.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-}
-
-.program__wraper {
   background-color: $background-cat;
 }
 
@@ -24,7 +26,7 @@
 }
 
 .program__text {
-  margin-bottom: 10px;
+  margin: 0 0 10px;
   font-style: normal;
   font-size: 14px;
   line-height: 14px;
@@ -38,5 +40,113 @@
 }
 
 .program__imege {
-  margin: 0 0 35px;
+  margin-top: -95px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .program {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    color: $color-text;
+    text-align: left;
+  }
+
+  .program__wrapper {
+    width: 540px;
+    margin: 0 auto;
+    background: none;
+  }
+
+  .program__title {
+    margin: 0 0 41px;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 60px;
+    text-transform: none;
+    color: $color-text;
+  }
+
+  .program__text {
+    margin: 0 0 50px;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .program__imege {
+    margin: 0 0 -70px;
+    position: relative;
+    left: 5px;
+    top: -68px;
+    z-index: -1;
+  }
+
+  .program__button {
+    font-style: normal;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 10px 38px;
+    width: 203px;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program {
+    margin: 0 0 160px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+    color: $color-text;
+    text-align: left;
+  }
+
+  .program__wrapper {
+    margin: 0 0 125px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -200px;
+      right: -110px;
+      width: 60%;
+      height: 699px;
+      background-color: $background-cat;
+      background-image: url("../../img/background-cat-tablet.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  }
+
+  .program__text {
+    margin: 0 0 70px;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .program__imege {
+    position: absolute;
+    top: -61px;
+    left: 437px;
+    margin: auto;
+  }
+
+  .program__button {
+    font-style: normal;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 95px;
+    padding: 10px 40px;
+    position: relative;
+    top: -15px;
+  }
 }

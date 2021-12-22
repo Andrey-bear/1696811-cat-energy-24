@@ -1,5 +1,12 @@
 .social__list {
   margin: 0;
+  width: 130px;
+  padding: 20px 75px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   list-style: none;
   border-top: 1px solid $border-darker;
   border-bottom: 1px solid $border-darker;
@@ -22,5 +29,14 @@
 
   &--facebook:active path {
     stroke: $color-bottom-active;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    width: 125px;
+    margin: 0;
+    padding: 23px 77px;
+    border: none;
   }
 }

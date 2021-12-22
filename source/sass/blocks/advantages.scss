@@ -1,8 +1,11 @@
 .advantages {
+  text-align: left;
   text-transform: none;
+  margin-bottom: 36px;
 }
 
 .advantages__title {
+  margin: 0 0 38px;
   font-style: normal;
   font-size: 36px;
   line-height: 40px;
@@ -12,13 +15,135 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.advantages__item {
+  &--1 {
+    background-image: url("../../img/nature-product.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--2 {
+    background-image: url("../../img/powder.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--3 {
+    background-image: url("../../img/food.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--4 {
+    background-image: url("../../img/clock.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .advantages__text {
+  margin: 0 0 20px;
+  padding-top: 2px;
+  padding-left: 80px;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 18px;
   text-transform: none;
   color: $paragraph-light;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    padding: 0;
+  }
+
+  .advantages__title {
+    margin: 0 0 63px;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 86px;
+    padding: 0;
+    list-style: none;
+    counter-reset: myCounter;
+  }
+
+  .advantages__text {
+    padding: 0;
+    width: 250px;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .advantages__item {
+    padding-top: 110px;
+    min-width: 230px;
+    min-height: 200px;
+
+    &::before {
+      counter-increment: myCounter;
+      content: counter(myCounter);
+      color: $background-light;
+      position: absolute;
+      z-index: -1;
+      margin-left: 104px;
+      margin-top: -150px;
+      font-style: normal;
+      font-size: 280px;
+      line-height: 280px;
+    }
+
+    &--1 {
+      background-image: url("../../img/nature-product-tablet.svg");
+      background-repeat: no-repeat;
+    }
+
+    &--2 {
+      background-image: url("../../img/powder-tablet.svg");
+      background-repeat: no-repeat;
+    }
+
+    &--3 {
+      background-image: url("../../img/food-tablet.svg");
+      background-repeat: no-repeat;
+    }
+
+    &--4 {
+      background-image: url("../../img/clock-tablet.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__list {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    counter-reset: myCounter;
+  }
+
+  .advantages__item::before {
+    counter-increment: myCounter;
+    content: counter(myCounter);
+    color: $background-light;
+    position: absolute;
+    z-index: -1;
+    margin-left: 104px;
+    margin-top: -150px;
+    font-style: normal;
+    font-size: 280px;
+    line-height: 280px;
+  }
 }

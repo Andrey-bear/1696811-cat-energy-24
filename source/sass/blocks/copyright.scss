@@ -1,4 +1,9 @@
 .copyright__link {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   color: $paragraph-light;
 }
 
@@ -12,4 +17,29 @@
 
 .copyright__link:active svg path {
   fill: $color-bottom-active;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: $paragraph-light;
+  }
+
+  .copyright__text {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__link {
+    justify-content: flex-end;
+  }
+
+  .copyright__text {
+    padding-right: 35px;
+  }
 }

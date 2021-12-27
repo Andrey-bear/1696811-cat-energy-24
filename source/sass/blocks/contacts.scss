@@ -1,3 +1,9 @@
+.contacts {
+  &--background {
+    background: $background-light;
+  }
+}
+
 .contacts__cooperation {
   padding: 25px 15px;
   display: flex;
@@ -37,7 +43,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    background-color: $main-background;
+
+    &--background {
+      background: $background-light;
+    }
+  }
+
   .contacts__cooperation {
+    padding: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -46,7 +61,7 @@
   }
 
   .contacts__title {
-    padding: 66px 15px 51px;
+    padding: 25px 40px;
     width: 25%;
     text-align: left;
     font-style: normal;
@@ -55,7 +70,7 @@
   }
 
   .contacts__address {
-    padding: 66px 15px 51px;
+    padding: 45px 40px;
     width: 24%;
     font-style: normal;
     font-size: 16px;

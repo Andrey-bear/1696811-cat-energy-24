@@ -11,4 +11,18 @@
     color: $color-text-light;
     background: $color-bottom-hover;
   }
+
+  &--muted {
+    color: $paragraph-light;
+    background-color: $background-light;
+  }
+
+  &--muted:hover {
+    background-color: $bottomcatalog-hover;
+  }
+
+  &--muted:active {
+    color: $paragraph-light-active;
+    background-color: $bottomcatalog-hover;
+  }
 }

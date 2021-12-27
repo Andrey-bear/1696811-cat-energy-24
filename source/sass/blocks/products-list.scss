@@ -1,7 +1,35 @@
 .products-list__item {
+  padding: 13px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   border-top: 1px solid $border-light;
 }
 
 .products-list__item:last-child {
   border-bottom: 1px solid $border-light;
+}
+
+@media (min-width: $tablet-width) {
+  .products-list__item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px solid $border-light;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .products-list__item {
+    width: 900px;
+    padding: 13px 2px 20px 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid $border-light;
+  }
 }

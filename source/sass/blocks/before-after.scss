@@ -143,7 +143,7 @@
       top: 560px;
       left: 0;
       right: 0;
-      height: 440px;
+      height: 100%;
       background: $background-light;
       z-index: -1;
     }
@@ -211,6 +211,7 @@
   }
 
   .before-after__block {
+    margin-bottom: 20px;
     width: 591px;
   }
 
@@ -259,7 +260,7 @@
 
 @media (min-width: $desktop-width) {
   .before-after {
-    margin: 0;
+    margin: 0 0 30px;
     display: flex;
     flex-direction: row;
     position: relative;
@@ -271,7 +272,7 @@
     top: 186px;
     left: 0;
     right: 0;
-    height: 425px;
+    height: 100%;
     width: 100%;
     background: $background-light;
     z-index: -1;
@@ -305,8 +306,8 @@
 
   .before-after__block {
     position: relative;
-    left: 80px;
-    width: 620px;
+    left: 55px;
+    width: 586px;
   }
 
   .before-after__image {

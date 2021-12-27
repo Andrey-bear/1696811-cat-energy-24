@@ -1,9 +1,22 @@
 .form__fieldset {
+  padding: 20px;
+  margin: 0;
   border: none;
+
+  &--border {
+    border-top: 1px solid $bottomcatalog-hover;
+    border-bottom: 1px solid $bottomcatalog-hover;
+  }
+}
+
+.form__block-button {
+  margin-bottom: 25px;
 }
 
 .form__button {
+  width: 100%;
   border: none;
+  margin-bottom: 15px;
 }
 
 .form__necessarily {

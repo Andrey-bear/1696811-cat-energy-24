@@ -42,6 +42,10 @@
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
+
+    &--peculiarity {
+      margin: 0;
+    }
   }
 
   .page-header {

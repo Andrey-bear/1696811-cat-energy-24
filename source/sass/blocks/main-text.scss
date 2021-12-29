@@ -9,16 +9,16 @@
 
 @media (min-width: $tablet-width) {
   .main-text {
-    padding: 20px 30px;
-    margin: 0 0 82px;
+    padding: 20px 300px 30px 60px;
+    margin: 0 0 50px;
     font-style: normal;
     font-size: 20px;
     line-height: 30px;
-    }
   }
+}
 
-  @media (min-width: $desktop-width) {
-    .main-text {
-      padding: 20px 120px;
-    }
+@media (min-width: $desktop-width) {
+  .main-text {
+    padding: 20px 912px 20px 120px;
   }
+}

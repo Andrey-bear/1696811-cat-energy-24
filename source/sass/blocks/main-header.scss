@@ -9,17 +9,23 @@
 }
 
 @media (min-width: $tablet-width) {
-.main-header {
-  padding: 20px 30px;
-  margin: 0 0 82px;
-  font-style: normal;
-  font-size: 60px;
-  line-height: 60px;
+  .main-header {
+    padding: 20px 30px;
+    margin: 0 0 82px;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 60px;
+
+    &--accent {
+      padding: 20px 60px;
+      margin-bottom: 50px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-header {
+    margin-top: -70px;
     padding: 20px 120px;
   }
 }

@@ -180,6 +180,8 @@
 }
 
 .fields__title {
+  width: 100%;
+  display: block;
   position: relative;
   font-style: normal;
   font-size: 24px;
@@ -198,12 +200,12 @@
     top: 15px;
     background-color: $color-bottom;
   }
+}
 
-  &--descr {
-    position: relative;
-    right: 75px;
-    bottom: 25px;
-  }
+.fields__title-text {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $main-background;
 }
 
 .fields__textarea {
@@ -226,4 +228,100 @@
 .fields__image {
   position: absolute;
   right: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .fields__list {
+    &--add-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  .fields__item {
+    font-size: 20px;
+    line-height: 30px;
+
+    &--add-item {
+      width: 270px;
+    }
+  }
+
+  .fields__input {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .fields__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .fields__title-text {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .fields__textarea {
+    padding: 10px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .fields__input--radio + label::before {
+    top: 0;
+  }
+
+  .fields__input--radio:hover + label::before {
+    top: 0;
+  }
+
+  .fields__input--radio:active + label::before {
+    top: 0;
+  }
+
+  .fields__input--radio:checked + label::after {
+    top: 9px;
+  }
+
+  .fieldset__input--radio:checked:active + label::after {
+    top: 0;
+  }
+
+  .fields__input--checkbox + label::before {
+    top: 3px;
+  }
+
+  .fields__input--checkbox:checked + label::after {
+    top: 5px;
+  }
+
+  .fields__input--checkbox:hover + label::before {
+    top: 3px;
+  }
+
+  .fields__input--checkbox:active + label::before {
+    top: 3;
+  }
+
+  .fields__input--checkbox:checked:active + label::after {
+    top: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fields__list {
+    &--changes3 {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .fields__item {
+      &--transformation {
+        width: 567px;
+      }
+    }
+  }
 }

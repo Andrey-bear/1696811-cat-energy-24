@@ -1,7 +1,16 @@
+.present {
+  margin: 0 0 35px;
+}
+
 .present__container {
+  min-height: 289px;
   background-image: url("../../img/cat-green.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.present__icon {
+  padding: 58px 101px 33px;
 }
 
 .present__text {
@@ -11,5 +20,50 @@
   line-height: 20px;
   text-transform: none;
   color: $main-background;
+  width: 161px;
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .present {
+    margin: 0;
+  }
+
+  .present__container {
+    display: flex;
+    flex-direction: row;
+    background-image: url("../../img/cat-green-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .present__icon {
+    padding: 57px 145px 33px 78px;
+  }
+
+  .present__text {
+    padding: 70px;
+    height: 60px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .present__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../img/cat-green-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .present__icon {
+    padding: 60px 83px 33px;
+  }
+
+  .present__text {
+    padding: 8px 20px 8px;
+    text-align: center;
+  }
 }

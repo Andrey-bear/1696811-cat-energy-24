@@ -1,6 +1,12 @@
 .container {
+  display: block;
   width: 280px;
   margin: 0 auto;
+
+  &--circuit {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -12,5 +18,9 @@
 @media (min-width: $desktop-width) {
   .container {
     width: 1220px;
+
+    &--circuit {
+      margin-left: 80px;
+    }
   }
 }

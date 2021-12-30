@@ -10,9 +10,138 @@
   line-height: 18px;
   color: $paragraph-light;
   text-align: left;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &--info {
+    margin-bottom: 15px;
+  }
+
+  &--radio {
+    width: 210px;
+    padding-left: 45px;
+    margin-bottom: 30px;
+    color: $color-text-title;
+    cursor: pointer;
+  }
+
+  &--checkbox {
+    margin-bottom: 20px;
+  }
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.fields__input--radio + label::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $radio-border;
+  border-radius: 50%;
+}
+
+.fields__input--radio:hover + label::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $radio-borderhover;
+  border-radius: 50%;
+}
+
+.fields__input--radio:active + label::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $radio-borderhover-active;
+  border-radius: 50%;
+}
+
+.fields__input--radio:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  width: 13.5px;
+  height: 13.5px;
+  background-color: $color-bottom;
+  border-radius: 50%;
+}
+
+.fieldset__input--radio:checked:active + label::after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  width: 13.5px;
+  height: 13.5px;
+  background-color: $color-bottom-active;
+  border-radius: 50%;
+}
+
+.fields__input--checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $radio-border;
+}
+
+.fields__input--checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 3px;
+  width: 26px;
+  height: 26px;
+  background-image: url("../../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.fields__input--checkbox:hover + label::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $radio-borderhover;
+}
+
+.fields__input--checkbox:active + label::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $radio-borderhover-active;
+}
+
+.fields__input--checkbox:checked:active + label::after {
+  top: 0;
+  left: 3px;
+  width: 26px;
+  height: 26px;
+  background-image: url("../../img/tick-active.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .fields__label {
+  margin-right: 10px;
   white-space: nowrap;
   cursor: pointer;
 
@@ -21,11 +150,14 @@
   }
 
   &--checkbox {
+    padding: 5px 10px 5px 45px;
     color: $color-text;
   }
 }
 
 .fields__input {
+  width: 100%;
+  padding: 10px 40px 10px 10px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-size: 16px;
@@ -48,14 +180,36 @@
 }
 
 .fields__title {
+  width: 100%;
+  display: block;
+  position: relative;
   font-style: normal;
   font-size: 24px;
   line-height: 26px;
   text-transform: none;
   text-align: left;
+  margin: 0 0 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 2px;
+    right: 0;
+    top: 15px;
+    background-color: $color-bottom;
+  }
+}
+
+.fields__title-text {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $main-background;
 }
 
 .fields__textarea {
+  padding: 7px;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -63,9 +217,111 @@
   border: 1px solid $border-light;
   box-sizing: border-box;
   width: 100%;
+  min-height: 150px;
   resize: none;
 
   &:hover {
     border: 1px solid $radio-border;
+  }
+}
+
+.fields__image {
+  position: absolute;
+  right: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .fields__list {
+    &--add-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  .fields__item {
+    font-size: 20px;
+    line-height: 30px;
+
+    &--add-item {
+      width: 270px;
+    }
+  }
+
+  .fields__input {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .fields__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .fields__title-text {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .fields__textarea {
+    padding: 10px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .fields__input--radio + label::before {
+    top: 0;
+  }
+
+  .fields__input--radio:hover + label::before {
+    top: 0;
+  }
+
+  .fields__input--radio:active + label::before {
+    top: 0;
+  }
+
+  .fields__input--radio:checked + label::after {
+    top: 9px;
+  }
+
+  .fieldset__input--radio:checked:active + label::after {
+    top: 0;
+  }
+
+  .fields__input--checkbox + label::before {
+    top: 3px;
+  }
+
+  .fields__input--checkbox:checked + label::after {
+    top: 5px;
+  }
+
+  .fields__input--checkbox:hover + label::before {
+    top: 3px;
+  }
+
+  .fields__input--checkbox:active + label::before {
+    top: 3;
+  }
+
+  .fields__input--checkbox:checked:active + label::after {
+    top: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fields__list {
+    &--changes3 {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .fields__item {
+      &--transformation {
+        width: 567px;
+      }
+    }
   }
 }

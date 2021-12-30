@@ -1,7 +1,18 @@
 .description__cell {
+  padding: 0;
   text-align: left;
 }
 
 .description__cell:last-child {
   text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+  .description__row {
+    border-bottom: 1px solid $radio-border;
+  }
+
+  .description__cell {
+    padding: 9px 1.5px 9px;
+  }
 }

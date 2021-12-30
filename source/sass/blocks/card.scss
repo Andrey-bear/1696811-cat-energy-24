@@ -1,9 +1,28 @@
+.card__info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 0 20px;
+}
+
 .card__title {
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
   color: $color-text-title;
   text-align: left;
+  width: 90px;
+  margin: 0 0 13px;
+
+  &--add {
+    margin: 0 0 8px;
+    width: 204px;
+    color: $accent-text;
+  }
+}
+
+.card__image-link {
+  width: 120px;
 }
 
 .card__link {
@@ -19,6 +38,21 @@
   color: $paragraph-light;
 }
 
+.card__all {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.card__icon {
+  &--add {
+    padding-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
 .card__text {
   font-family: "Arial", sans-serif;
   font-style: normal;
@@ -26,4 +60,117 @@
   line-height: 16px;
   text-transform: none;
   color: $paragraph-light;
+
+  &--add {
+    margin: 0 0 21px;
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: none;
+    color: $paragraph-light;
+  }
+}
+
+.card__button {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .card {
+    &--add {
+      background: none;
+      border: 1px solid $background-light;
+    }
+  }
+
+  .card__image-link {
+    position: absolute;
+    bottom: 275px;
+    left: 0;
+    width: 100%;
+  }
+
+  .card__info {
+    width: 100%;
+  }
+
+  .card__title {
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    width: 130px;
+    margin: 0 auto;
+    text-align: center;
+
+    &--add {
+      width: 150px;
+      margin: 0 0 15px;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 22px;
+    }
+  }
+
+  .card__description {
+    width: 100%;
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 35px;
+    border-collapse: collapse;
+  }
+
+  .card__icon {
+    &--add {
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      left: 130px;
+      top: 50px;
+    }
+  }
+
+  .card__all {
+    min-height: 173px;
+  }
+
+  .card__text {
+    &--add {
+      width: 215px;
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    width: 1220px;
+  }
+
+  .products__item {
+    padding: 161px 40px 35px;
+    margin: 90px 0 50px;
+    width: 170px;
+  }
+
+  .card__info {
+    width: 180px;
+  }
+
+  .card__button {
+    padding: 7px 35px;
+  }
+
+  .card__icon {
+    &--add {
+      left: 90px;
+    }
+  }
+
+  .card__all {
+    width: 100%;
+    min-height: 80%;
+    flex-wrap: nowrap;
+  }
 }

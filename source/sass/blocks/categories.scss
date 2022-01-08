@@ -23,6 +23,7 @@
   padding-bottom: 5px;
   margin: 0 0 22px;
   font-style: normal;
+  font-weight: normal;
   font-size: 24px;
   line-height: 37px;
   text-align: left;
@@ -32,6 +33,7 @@
   margin: 0 0 15px;
   font-family: "Arial", sans-serif;
   font-style: normal;
+  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   text-transform: none;
@@ -51,21 +53,42 @@
 }
 
 .categories__link {
+  position: relative;
   padding-top: 15px;
   color: $color-text;
   border-top: 1px solid $border-darker;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 102px;
+    width: 50px;
+    height: 15px;
+    background-image: url("../../img/arrow.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.categories__link:hover {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 102px;
+    width: 50px;
+    height: 15px;
+    background-image: url("../../img/arrow-big.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .categories__link:active {
   color: $color-text-active;
-}
 
-.categories__link:active svg path {
-  fill: $color-text-active;
-}
-
-.categories__link:active svg line {
-  stroke: $color-text-active;
+  &::before {
+    opacity: 0.2;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -83,6 +106,7 @@
     padding: 0;
     margin: 0 0 24px;
     font-style: normal;
+    font-weight: normal;
     font-size: 36px;
     line-height: 36px;
     text-align: left;
@@ -92,6 +116,7 @@
     padding-right: 265px;
     font-family: "Arial", sans-serif;
     font-style: normal;
+    font-weight: normal;
     font-size: 16px;
     line-height: 24px;
   }
@@ -110,9 +135,23 @@
 
   .categories__link {
     font-style: normal;
+    font-weight: normal;
     font-size: 20px;
     line-height: 30px;
     border-top: none;
+    background-position: 23% 75%;
+
+    &::before {
+      top: 24px;
+      left: 133px;
+    }
+  }
+
+  .categories__link:hover {
+    &::before {
+      top: 24px;
+      left: 133px;
+    }
   }
 }
 
@@ -144,6 +183,10 @@
     background-image: url("../../img/weight-gain-desktop.svg");
     background-repeat: no-repeat;
     background-position: 7% 10%;
+  }
+
+  .categories__link {
+    background-position: 28% 75%;
   }
 
   .categories__title {

@@ -5,6 +5,10 @@
   background-color: $main-background;
 }
 
+.page-header__top {
+  background-color: $main-background;
+}
+
 .page-header__wrapper {
   display: flex;
   flex-direction: row;
@@ -15,15 +19,57 @@
 }
 
 .page-header__toggle {
-  padding: 10px;
-  border: none;
-  text-transform: uppercase;
-  cursor: pointer;
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
   width: 24px;
   height: 16px;
-  background: transparent;
-  background-image: url("../../img/open-menu.svg");
-  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  background-color: $main-background;
+}
+
+.page-header__toggle--closed {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $color-text;
+    box-shadow: 0 8px 0 0 $color-text, 0 16px 0 0 $color-text;
+    transition: all 0.6s ease 0s;
+  }
+}
+
+.page-header__toggle--opened {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: $color-text;
+    transition: all 0.6s ease 0s;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.page-header__toggle--nojs .page-header__toggle {
+  display: none;
 }
 
 .page-header__link-logo:hover {
@@ -80,6 +126,7 @@
   .page-header__top {
     margin: 0;
     z-index: 1;
+    background-color: transparent;
   }
 
   .page-header__wrapper {

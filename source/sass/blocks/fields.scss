@@ -6,6 +6,7 @@
 
 .fields__item {
   font-style: normal;
+  font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   color: $paragraph-light;
@@ -184,6 +185,7 @@
   display: block;
   position: relative;
   font-style: normal;
+  font-weight: normal;
   font-size: 24px;
   line-height: 26px;
   text-transform: none;
@@ -205,6 +207,7 @@
 .fields__title-text {
   padding-left: 20px;
   padding-right: 20px;
+  max-width: 200px;
   background-color: $main-background;
 }
 
@@ -214,6 +217,7 @@
   line-height: 18px;
   text-transform: uppercase;
   font-style: normal;
+  font-weight: normal;
   border: 1px solid $border-light;
   box-sizing: border-box;
   width: 100%;
@@ -257,11 +261,16 @@
   .fields__title {
     font-size: 36px;
     line-height: 36px;
+
+    &::before {
+      top: 20px;
+    }
   }
 
   .fields__title-text {
     padding-left: 40px;
     padding-right: 40px;
+    margin: 0 30px;
   }
 
   .fields__textarea {

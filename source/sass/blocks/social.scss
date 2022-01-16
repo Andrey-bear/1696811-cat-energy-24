@@ -32,6 +32,23 @@
   }
 }
 
+// пример спрайта для тренировки
+
+.iconbox {
+  fill: #666666;
+  stroke: #666666;
+}
+
+.iconbox:hover {
+  stroke: green;
+  fill: green;
+}
+
+.iconbox:active {
+  stroke: red;
+  fill: red;
+}
+
 @media (min-width: $tablet-width) {
   .social__list {
     width: 125px;

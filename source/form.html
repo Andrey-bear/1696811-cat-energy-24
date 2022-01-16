@@ -40,14 +40,16 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="main-header main-header--accent">Подбор программы</h1>
-      <p class="main-text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <div class="container">
+        <h1 class="main-header main-header--accent">Подбор программы</h1>
+        <p class="main-text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      </div>
       <section class="questionnaire">
         <h2 class="visually-hidden">Анкета</h2>
         <form class="questionnaire__form form" action="https://echo.htmlacademy.ru" method="GET">
           <div class="form__fieldset-changes">
             <fieldset class="form__fieldset fields">
-              <div class="form__fieldset-wrapper form__fieldset-wrapper--changes-form">
+              <div class="form__fieldset-wrapper form__fieldset-wrapper--changes-form container">
                 <ul class="fields__list">
                   <li class="fields__item fields__item--info">
                     <label class="fields__label" for="form-name">Имя:*</label>
@@ -65,7 +67,7 @@
               </div>
             </fieldset>
             <fieldset class="form__fieldset fields form__fieldset--border">
-              <div class="form__fieldset-wrapper form__fieldset-wrapper--changes-radio">
+              <div class="form__fieldset-wrapper form__fieldset-wrapper--changes-radio container">
                 <ul class="fields__list">
                   <li class="fields__item fields__item--radio">
                     <input class="visually-hidden fields__input fields__input--radio" type="radio" id="form-slim" name="program" value="slim" checked>
@@ -86,10 +88,10 @@
           <fieldset class="form__fieldset fields">
             <legend class="fields__title">
               <span class="container container--circuit">
-                <span class="fields__title-text">Контактные данные (владельца кота)</span>
+                <span class="fields__title-text container">Контактные данные (владельца кота)</span>
               </span>
             </legend>
-            <div class="form__fieldset-wrapper">
+            <div class="form__fieldset-wrapper container">
               <ul class="fields__list fields__list--changes3">
                 <li class="fields__item fields__item--info fields__item--transformation">
                   <label class="fields__label" for="form-email">E-mail:*</label>
@@ -123,20 +125,20 @@
           <fieldset class="form__fieldset fields">
             <label class="fields__title" for="text">
               <span class="container container--circuit">
-                <span class="fields__title-text">Комментарий</span>
+                <span class="fields__title-text fields__title-text--comment container">Комментарий</span>
               </span>
             </label>
-            <div class="form__fieldset-wrapper">
+            <div class="form__fieldset-wrapper container">
               <textarea class="fields__textarea" placeholder="Расскажите обо всех повадках кота" id="text" name="comments"></textarea>
             </div>
           </fieldset>
           <fieldset class="form__fieldset fields fields--add">
             <legend class="fields__title">
               <span class="container container--circuit">
-                <span class="fields__title-text">Дополнительно</span>
+                <span class="fields__title-text fields__title-text--additional container">Дополнительно</span>
               </span>
             </legend>
-            <div class="form__fieldset-wrapper">
+            <div class="form__fieldset-wrapper container">
               <ul class="fields__list fields__list--add-list">
                 <li class="fields__item fields__item--add-item fields__item--checkbox">
                   <input class="visually-hidden fields__input fields__input--checkbox" type="checkbox" id="form-sweetener" name="sweetener" checked>
@@ -158,8 +160,8 @@
             </div>
           </fieldset>
           <div class="form__block-button">
-            <button class="form__button button" type="submit">Отправить заявку</button>
-            <span class="form__necessarily">* — Обязательные поля</span>
+            <button class="form__button button container" type="submit">Отправить заявку</button>
+            <span class="form__necessarily container">* — Обязательные поля</span>
           </div>
         </form>
       </section>

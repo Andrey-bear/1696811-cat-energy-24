@@ -5,9 +5,11 @@
 
   &--circuit {
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 320px;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
   }
 }
 
@@ -17,6 +19,7 @@
 
     &--circuit {
       display: block;
+      width: 773px;
     }
   }
 }
@@ -26,7 +29,7 @@
     width: 1220px;
 
     &--circuit {
-      margin-left: 80px;
+      margin: 0 auto;
     }
   }
 }

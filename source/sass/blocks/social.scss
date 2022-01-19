@@ -13,47 +13,29 @@
 }
 
 .social__link {
-  &--vkontakte:hover path,
-  &--instagram:hover path {
+  stroke: $bottom-social;
+  fill: $bottom-social;
+
+  &:hover {
+    stroke: $color-bottom;
     fill: $color-bottom;
   }
 
-  &--vkontakte:active path,
-  &--instagram:active path {
-    fill: $color-bottom-active;
+  &:active {
+    opacity: 0.5;
   }
-
-  &--facebook:hover path {
-    stroke: $color-bottom;
-  }
-
-  &--facebook:active path {
-    stroke: $color-bottom-active;
-  }
-}
-
-// пример спрайта для тренировки
-
-.iconbox {
-  fill: #666666;
-  stroke: #666666;
-}
-
-.iconbox:hover {
-  stroke: green;
-  fill: green;
-}
-
-.iconbox:active {
-  stroke: red;
-  fill: red;
 }
 
 @media (min-width: $tablet-width) {
   .social__list {
-    width: 125px;
+    width: 140px;
     margin: 0;
     padding: 23px 77px;
     border: none;
+  }
+
+  .social__icon {
+    width: 35px;
+    height: 26px;
   }
 }

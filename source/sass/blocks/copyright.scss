@@ -11,12 +11,16 @@
   color: $color-text-active;
 }
 
-.copyright__link:hover svg path {
+.copyright__link:hover svg {
   fill: $color-bottom;
 }
 
-.copyright__link:active svg path {
+.copyright__link:active svg {
   fill: $color-bottom-active;
+}
+
+.copyright__icon {
+  fill: $paragraph-light;
 }
 
 @media (min-width: $tablet-width) {

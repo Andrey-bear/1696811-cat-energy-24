@@ -106,7 +106,7 @@
   left: 3px;
   width: 26px;
   height: 26px;
-  background-image: url("../../img/tick.svg");
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -136,7 +136,7 @@
   left: 3px;
   width: 26px;
   height: 26px;
-  background-image: url("../../img/tick-active.svg");
+  background-image: url("../img/tick-active.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -205,10 +205,19 @@
 }
 
 .fields__title-text {
+  margin-left: 0;
   padding-left: 20px;
   padding-right: 20px;
   max-width: 200px;
   background-color: $main-background;
+
+  &--comment {
+    max-width: 130px;
+  }
+
+  &--additional {
+    max-width: 160px;
+  }
 }
 
 .fields__textarea {
@@ -236,7 +245,11 @@
 
 @media (min-width: $tablet-width) {
   .fields__list {
+    margin: 0;
+
     &--add-list {
+      width: 638px;
+      margin: 0 auto;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -249,7 +262,7 @@
     line-height: 30px;
 
     &--add-item {
-      width: 270px;
+      width: 235px;
     }
   }
 
@@ -268,12 +281,26 @@
   }
 
   .fields__title-text {
-    padding-left: 40px;
-    padding-right: 40px;
-    margin: 0 30px;
+    max-width: 556px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin: 0 35px;
+
+    &--comment {
+      max-width: 190px;
+    }
+
+    &--additional {
+      max-width: 228px;
+    }
+  }
+
+  .fields__image {
+    right: 20px;
   }
 
   .fields__textarea {
+    width: 638px;
     padding: 10px;
     font-size: 20px;
     line-height: 30px;
@@ -327,10 +354,33 @@
       justify-content: space-between;
     }
 
-    .fields__item {
-      &--transformation {
-        width: 567px;
-      }
+    &--add-list {
+      width: 1220px;
     }
+  }
+
+  .fields__item {
+    &--transformation {
+      width: 567px;
+    }
+  }
+
+  .fields__title-text {
+    max-width: 556px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: 0 -60px;
+
+    &--comment {
+      max-width: 190px;
+    }
+
+    &--additional {
+      max-width: 228px;
+    }
+  }
+
+  .fields__textarea {
+    width: 1220px;
   }
 }

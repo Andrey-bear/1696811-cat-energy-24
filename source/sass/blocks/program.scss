@@ -10,13 +10,13 @@
 
 .program__wrapper {
   min-height: 264px;
-  background-image: url("../../img/background-cat.jpg");
+  background-image: url("../img/background-cat.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-color: $background-cat;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/background-cat@2x.jpg");
+    background-image: url("../img/background-cat@2x.jpg");
     background-size: 320px auto;
   }
 }
@@ -46,7 +46,7 @@
   position: relative;
 }
 
-.program__imege {
+.program__image {
   margin-top: -95px;
   margin-bottom: 30px;
 }
@@ -86,7 +86,7 @@
     text-transform: uppercase;
   }
 
-  .program__imege {
+  .program__image {
     margin: 0 0 -70px;
     position: relative;
     left: 5px;
@@ -129,12 +129,12 @@
       width: 60%;
       height: 699px;
       background-color: $background-cat;
-      background-image: url("../../img/background-cat-tablet.jpg");
+      background-image: url("../img/background-cat-tablet.jpg");
       background-repeat: no-repeat;
       background-size: 100%;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/background-cat-tablet@2x.jpg");
+        background-image: url("../img/background-cat-tablet@2x.jpg");
         background-size: 732px auto;
       }
     }
@@ -149,7 +149,7 @@
     text-transform: uppercase;
   }
 
-  .program__imege {
+  .program__image {
     position: absolute;
     top: -61px;
     left: 437px;

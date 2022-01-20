@@ -1,5 +1,5 @@
 .main-text {
-  padding: 0 20px;
+  padding: 0;
   margin: 0 0 20px;
   text-align: left;
   font-style: normal;
@@ -10,7 +10,7 @@
 
 @media (min-width: $tablet-width) {
   .main-text {
-    padding: 20px 300px 30px 60px;
+    padding: 20px 300px 30px 35px;
     margin: 0 0 50px;
     font-style: normal;
     font-weight: normal;
@@ -21,6 +21,8 @@
 
 @media (min-width: $desktop-width) {
   .main-text {
-    padding: 20px 912px 20px 120px;
+    width: 350px;
+    padding: 0;
+    margin-bottom: 66px;
   }
 }

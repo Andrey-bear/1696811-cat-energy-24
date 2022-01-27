@@ -9,8 +9,8 @@
 }
 
 .categories__item {
-  padding: 21px 22px 18px 22px;
-  margin-bottom: 20px;
+  padding: 21px 20px 18px 20px;
+  margin-bottom: 25px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -19,9 +19,9 @@
 }
 
 .categories__title {
-  padding-left: 72px;
-  padding-bottom: 5px;
-  margin: 0 0 22px;
+  padding-left: 69px;
+  padding-top: 6px;
+  margin: 0 0 30px;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -30,7 +30,7 @@
 }
 
 .categories__text {
-  margin: 0 0 15px;
+  margin: 0 0 20px;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -43,7 +43,7 @@
 .categories__slimming {
   background-image: url("../img/slimming.svg");
   background-repeat: no-repeat;
-  background-position: 10% 10%;
+  background-position: 10% 9%;
 }
 
 .categories__weight-gain {
@@ -53,15 +53,20 @@
 }
 
 .categories__link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  left: -1px;
   position: relative;
-  padding-top: 15px;
+  padding-top: 21px;
   color: $color-text;
   border-top: 1px solid $border-darker;
 
   &::before {
     content: "";
     position: absolute;
-    top: 17px;
+    top: 22px;
     left: 102px;
     width: 50px;
     height: 15px;
@@ -74,7 +79,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 17px;
+    top: 22px;
     left: 102px;
     width: 50px;
     height: 15px;
@@ -92,27 +97,33 @@
 }
 
 @media (min-width: $tablet-width) {
+  .categories {
+    margin-bottom: 44px;
+  }
+
   .categories__list {
     margin: 0;
     padding: 0;
   }
 
   .categories__item {
-    padding: 75px 50px 62px 53px;
+    padding: 76px 50px 52px 53px;
+    margin-bottom: 30px;
     background-color: $background-light;
   }
 
   .categories__title {
     padding: 0;
-    margin: 0 0 24px;
+    margin: 0 0 23px;
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
+    font-size: 34px;
     line-height: 36px;
     text-align: left;
   }
 
   .categories__text {
+    margin: 0 0 37px;
     padding-right: 265px;
     font-family: "Arial", sans-serif;
     font-style: normal;
@@ -124,16 +135,17 @@
   .categories__slimming {
     background-image: url("../img/slimming-tablet.svg");
     background-repeat: no-repeat;
-    background-position: 88% 45%;
+    background-position: 88% 48%;
   }
 
   .categories__weight-gain {
     background-image: url("../img/weight-gain-tablet.svg");
     background-repeat: no-repeat;
-    background-position: 92% 58%;
+    background-position: 94% 52%;
   }
 
   .categories__link {
+    top: -6px;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -142,8 +154,8 @@
     background-position: 23% 75%;
 
     &::before {
-      top: 24px;
-      left: 133px;
+      top: 29px;
+      left: 129px;
     }
   }
 
@@ -164,9 +176,9 @@
   }
 
   .categories__item {
-    margin: 0 0 90px;
-    padding: 50px 5px 43px 53px;
-    width: 515px;
+    margin: 0 0 65px;
+    padding: 41px 5px 15px 53px;
+    width: 512px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -176,13 +188,13 @@
   .categories__slimming {
     background-image: url("../img/slimming-desktop.svg");
     background-repeat: no-repeat;
-    background-position: 10% 10%;
+    background-position: 11% 3%;
   }
 
   .categories__weight-gain {
     background-image: url("../img/weight-gain-desktop.svg");
     background-repeat: no-repeat;
-    background-position: 7% 10%;
+    background-position: 8% 5%;
   }
 
   .categories__link {
@@ -190,11 +202,12 @@
   }
 
   .categories__title {
-    margin: 0 0 80px;
+    margin: 0 0 74px;
     text-align: center;
   }
 
   .categories__text {
     padding-right: 40px;
+    margin: 0 0 12px;
   }
 }

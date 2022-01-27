@@ -9,7 +9,7 @@
 }
 
 .program__wrapper {
-  min-height: 264px;
+  min-height: 300px;
   background-image: url("../img/background-cat.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -22,11 +22,11 @@
 }
 
 .program__title {
-  padding-top: 30px;
-  margin: 0 0 24px;
+  padding-top: 28px;
+  margin: 0 0 23px;
   font-style: normal;
   font-weight: normal;
-  font-size: 36px;
+  font-size: 33px;
   line-height: 36px;
   text-transform: none;
 }
@@ -42,13 +42,13 @@
 
 .program__button {
   left: 0;
-  top: 300px;
+  top: 303px;
   position: relative;
 }
 
 .program__image {
-  margin-top: -95px;
-  margin-bottom: 30px;
+  margin-top: -134px;
+  margin-bottom: 41px;
 }
 
 @media (min-width: $tablet-width) {
@@ -62,7 +62,7 @@
   }
 
   .program__wrapper {
-    width: 540px;
+    width: 530px;
     margin: 0 auto;
     background: none;
   }
@@ -71,14 +71,14 @@
     margin: 0 0 41px;
     font-style: normal;
     font-weight: normal;
-    font-size: 60px;
+    font-size: 56px;
     line-height: 60px;
     text-transform: none;
     color: $color-text;
   }
 
   .program__text {
-    margin: 0 0 50px;
+    margin: 0 0 66px;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -87,10 +87,10 @@
   }
 
   .program__image {
-    margin: 0 0 -70px;
+    margin: 0 0 -101px;
     position: relative;
-    left: 5px;
-    top: -68px;
+    left: 0px;
+    top: -70px;
     z-index: -1;
   }
 
@@ -99,7 +99,7 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 20px;
-    padding: 10px 38px;
+    padding: 12px 21px;
     width: 203px;
     position: relative;
     left: 0;
@@ -126,7 +126,7 @@
       z-index: -1;
       top: -200px;
       right: -110px;
-      width: 60%;
+      width: 59%;
       height: 699px;
       background-color: $background-cat;
       background-image: url("../img/background-cat-tablet.jpg");
@@ -135,7 +135,7 @@
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/background-cat-tablet@2x.jpg");
-        background-size: 732px auto;
+        background-size: 724px auto;
       }
     }
   }
@@ -151,8 +151,8 @@
 
   .program__image {
     position: absolute;
-    top: -61px;
-    left: 437px;
+    top: -54px;
+    left: 449px;
     margin: auto;
   }
 
@@ -162,8 +162,8 @@
     font-size: 20px;
     line-height: 20px;
     margin-top: 95px;
-    padding: 10px 40px;
+    padding: 11px 20px;
     position: relative;
-    top: -15px;
+    top: -3px;
   }
 }

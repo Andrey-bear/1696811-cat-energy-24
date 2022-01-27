@@ -21,7 +21,7 @@
 }
 
 .main-nav__link {
-  padding: 22px 40px 24px;
+  padding: 22px 40px 22.5px;
   display: block;
   color: $color-text;
 }
@@ -40,7 +40,7 @@
   }
 
   .main-nav__list {
-    width: 440px;
+    width: 435px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -53,7 +53,7 @@
     line-height: 14px;
     text-align: center;
     margin: 0 -15px;
-    padding: 10px 15px;
+    padding: 10px 8px;
     border: none;
     position: relative;
   }
@@ -74,7 +74,7 @@
         content: "";
         position: absolute;
         right: 0;
-        top: 25px;
+        top: 28px;
         left: 0;
         height: 2px;
         background: $color-bottom;
@@ -85,9 +85,8 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__list {
-    width: 480px;
-    margin-left: 20px;
-    margin-bottom: 35px;
+    width: 471px;
+    margin-bottom: 26px;
   }
 
   .main-nav__item {

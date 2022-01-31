@@ -1,6 +1,6 @@
 .form__fieldset {
   padding: 0;
-  margin: 0 0 31px;
+  margin: 0 0 27px;
   border: none;
 
   &--border {
@@ -11,6 +11,7 @@
 }
 
 .form__block-button {
+  padding: 0 20px;
   margin-bottom: 25px;
 }
 
@@ -23,7 +24,7 @@
 .form__necessarily {
   font-family: "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-transform: none;
@@ -32,15 +33,18 @@
 
 @media (min-width: $tablet-width) {
   .form__fieldset {
+    margin: 0 0 50px;
+
     &--border {
       margin: 0 auto;
+      padding: 0;
       max-width: 624px;
       border: 1px solid $bottomcatalog-hover;
     }
   }
 
   .form__fieldset-changes {
-    margin-bottom: 30px;
+    margin-bottom: 61px;
   }
 
   .form__fieldset-wrapper {
@@ -48,8 +52,8 @@
     width: 620px;
 
     &--changes-radio {
-      width: 554px;
-      padding: 5px 35px;
+      width: 565px;
+      padding: 32px 35px;
     }
   }
 
@@ -68,7 +72,7 @@
     width: 244px;
     padding: 25px;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 0px;
     text-transform: uppercase;
@@ -76,7 +80,6 @@
 
   .form__necessarily {
     max-width: 206px;
-    padding-left: 115px;
     padding-bottom: 15px;
     font-size: 16px;
     line-height: 16px;
@@ -85,9 +88,11 @@
 
 @media (min-width: $desktop-width) {
   .form__fieldset {
+    margin: 0 0 70px;
+
     &--border {
       min-width: 568px;
-      height: 185px;
+      height: 193px;
       padding: 0;
       margin: 0;
       border: 1px solid $bottomcatalog-hover;
@@ -113,7 +118,7 @@
 
     &--changes-radio {
       width: 484px;
-      padding: 17px 22px;
+      padding: 26px 35px;
     }
   }
 

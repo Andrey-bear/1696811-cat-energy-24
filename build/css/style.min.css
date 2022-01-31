@@ -369,6 +369,12 @@ template {
 }
 @font-face {
   font-family: "Oswald";
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Oswald";
   src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
   font-weight: 700;
   font-style: normal;
@@ -436,7 +442,7 @@ template {
 
 .fields__item {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
@@ -455,8 +461,14 @@ template {
   color: #222222;
   cursor: pointer;
 }
+.fields__item--radio:active {
+  opacity: 0.3;
+}
 .fields__item--checkbox {
   margin-bottom: 20px;
+}
+.fields__item--checkbox:active {
+  opacity: 0.3;
 }
 .fields__item:last-child {
   margin: 0;
@@ -466,9 +478,9 @@ template {
   content: "";
   position: absolute;
   top: -9px;
-  left: 0;
-  width: 30px;
-  height: 30px;
+  left: -4px;
+  width: 37px;
+  height: 37px;
   border: 1px solid #cdcdcd;
   border-radius: 50%;
 }
@@ -477,9 +489,9 @@ template {
   content: "";
   position: absolute;
   top: -9px;
-  left: 0;
-  width: 30px;
-  height: 30px;
+  left: -4px;
+  width: 37px;
+  height: 37px;
   border: 1px solid #bababa;
   border-radius: 50%;
 }
@@ -488,9 +500,9 @@ template {
   content: "";
   position: absolute;
   top: -9px;
-  left: 0;
-  width: 30px;
-  height: 30px;
+  left: -4px;
+  width: 37px;
+  height: 37px;
   border: 1px solid rgba(186, 186, 186, 0.2);
   border-radius: 50%;
 }
@@ -595,10 +607,10 @@ template {
   border: 1px solid #cdcdcd;
 }
 .fields__input:focus {
-  border: 1px solid #444444;
+  border: 2px solid #444444;
 }
 .fields__input:invalid {
-  border: 1px solid #ff8282;
+  border: 2px solid #ff8282;
 }
 
 .fields__title {
@@ -606,7 +618,7 @@ template {
   display: block;
   position: relative;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   text-transform: none;
@@ -620,7 +632,7 @@ template {
   width: 100%;
   height: 2px;
   right: 0;
-  top: 12px;
+  top: 16px;
   background-color: #68b738;
 }
 
@@ -644,7 +656,7 @@ template {
   line-height: 18px;
   text-transform: uppercase;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   border: 1px solid #e6e6e6;
   box-sizing: border-box;
   width: 100%;
@@ -677,8 +689,11 @@ template {
     font-size: 20px;
     line-height: 30px;
   }
+  .fields__item--radio {
+    padding-left: 54px;
+  }
   .fields__item--add-item {
-    width: 235px;
+    width: 299px;
   }
 
   .fields__input {
@@ -687,11 +702,12 @@ template {
   }
 
   .fields__title {
+    margin-bottom: 53px;
     font-size: 36px;
     line-height: 36px;
   }
   .fields__title::before {
-    top: 20px;
+    top: 23px;
   }
 
   .fields__title-text {
@@ -719,19 +735,25 @@ template {
   }
 
   .fields__input--radio + label::before {
-    top: 0;
+    top: -5px;
+    left: -4px;
+    width: 37px;
+    height: 37px;
   }
 
   .fields__input--radio:hover + label::before {
-    top: 0;
+    top: -5px;
   }
 
   .fields__input--radio:active + label::before {
-    top: 0;
+    top: -5px;
   }
 
   .fields__input--radio:checked + label::after {
-    top: 9px;
+    top: 5px;
+    left: 6px;
+    width: 18px;
+    height: 18px;
   }
 
   .fieldset__input--radio:checked:active + label::after {
@@ -739,23 +761,32 @@ template {
   }
 
   .fields__input--checkbox + label::before {
-    top: 3px;
+    top: 4px;
+    left: -6px;
+    width: 36px;
+    height: 36px;
   }
 
   .fields__input--checkbox:checked + label::after {
-    top: 5px;
+    top: 9px;
   }
 
   .fields__input--checkbox:hover + label::before {
-    top: 3px;
+    top: 4px;
+    left: -6px;
+    width: 36px;
+    height: 36px;
   }
 
   .fields__input--checkbox:active + label::before {
-    top: 3;
+    top: 4px;
+    left: -6px;
+    width: 36px;
+    height: 36px;
   }
 
   .fields__input--checkbox:checked:active + label::after {
-    top: 5px;
+    top: 9px;
   }
 }
 @media (min-width: 1440px) {
@@ -778,6 +809,7 @@ template {
     margin: 0 -60px;
   }
   .fields__title-text--comment {
+    margin-top: -41px;
     max-width: 190px;
   }
   .fields__title-text--additional {
@@ -790,7 +822,7 @@ template {
 }
 .form__fieldset {
   padding: 0;
-  margin: 0 0 31px;
+  margin: 0 0 27px;
   border: none;
 }
 .form__fieldset--border {
@@ -800,6 +832,7 @@ template {
 }
 
 .form__block-button {
+  padding: 0 20px;
   margin-bottom: 25px;
 }
 
@@ -812,7 +845,7 @@ template {
 .form__necessarily {
   font-family: "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-transform: none;
@@ -820,14 +853,18 @@ template {
 }
 
 @media (min-width: 768px) {
+  .form__fieldset {
+    margin: 0 0 50px;
+  }
   .form__fieldset--border {
     margin: 0 auto;
+    padding: 0;
     max-width: 624px;
     border: 1px solid #ebebeb;
   }
 
   .form__fieldset-changes {
-    margin-bottom: 30px;
+    margin-bottom: 61px;
   }
 
   .form__fieldset-wrapper {
@@ -835,8 +872,8 @@ template {
     width: 620px;
   }
   .form__fieldset-wrapper--changes-radio {
-    width: 554px;
-    padding: 5px 35px;
+    width: 565px;
+    padding: 32px 35px;
   }
 
   .form__block-button {
@@ -854,7 +891,7 @@ template {
     width: 244px;
     padding: 25px;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 0px;
     text-transform: uppercase;
@@ -862,16 +899,18 @@ template {
 
   .form__necessarily {
     max-width: 206px;
-    padding-left: 115px;
     padding-bottom: 15px;
     font-size: 16px;
     line-height: 16px;
   }
 }
 @media (min-width: 1440px) {
+  .form__fieldset {
+    margin: 0 0 70px;
+  }
   .form__fieldset--border {
     min-width: 568px;
-    height: 185px;
+    height: 193px;
     padding: 0;
     margin: 0;
     border: 1px solid #ebebeb;
@@ -895,7 +934,7 @@ template {
   }
   .form__fieldset-wrapper--changes-radio {
     width: 484px;
-    padding: 17px 22px;
+    padding: 26px 35px;
   }
 
   .form__block-button {
@@ -919,7 +958,7 @@ template {
 .page__body {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   min-height: 100%;
@@ -934,7 +973,7 @@ template {
     margin: 0 auto;
     font-family: "Oswald", "Arial", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
   }
@@ -951,7 +990,7 @@ template {
     margin: 0 auto;
     font-family: "Oswald", "Arial", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
   }
@@ -1027,10 +1066,6 @@ template {
   transform: rotate(-45deg);
 }
 
-.page-header__toggle--nojs .page-header__toggle {
-  display: none;
-}
-
 .page-header__link-logo:hover {
   opacity: 0.8;
 }
@@ -1044,8 +1079,8 @@ template {
     margin: 0 0 32px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: nowrap;
+    justify-content: flex-end;
+    flex-wrap: wrap;
     align-items: center;
   }
   .page-header__top--peculiarity {
@@ -1100,6 +1135,17 @@ template {
     width: 202px;
   }
 }
+.main-nav {
+  min-width: 320px;
+  position: absolute;
+  z-index: 1;
+  background: #ffffff;
+}
+.main-nav--opened {
+  width: 100%;
+  display: block;
+}
+
 .main-nav--closed .main-nav__item {
   display: none;
 }
@@ -1129,14 +1175,22 @@ template {
 }
 
 .main-nav__link:hover {
-  color: rgba(0, 0, 0, 0.6);
+  opacity: 0.6;
 }
 
 .main-nav__link:active {
-  color: rgba(0, 0, 0, 0.3);
+  opacity: 0.2;
 }
 
 @media (min-width: 768px) {
+  .main-nav {
+    min-width: min-content;
+    background: none;
+  }
+  .main-nav--opened {
+    width: min-content;
+  }
+
   .main-nav--closed .main-nav__item {
     display: block;
   }
@@ -1190,7 +1244,7 @@ template {
 
   .main-nav__item {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 30px;
     text-align: center;
@@ -1222,10 +1276,10 @@ template {
   }
 }
 .main-header {
-  margin: 0 0 36px;
+  margin: 0 0 39px;
   padding: 28px 0 0;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 33px;
   line-height: 36px;
   text-transform: none;
@@ -1234,28 +1288,29 @@ template {
 
 @media (min-width: 768px) {
   .main-header {
-    padding: 20px 0;
-    margin: 0 0 82px;
+    padding: 31px 0;
+    margin: 0 0 5px;
     font-style: normal;
-    font-weight: normal;
-    font-size: 60px;
+    font-weight: 400;
+    font-size: 56px;
     line-height: 60px;
   }
   .main-header--accent {
-    padding: 20px 35px;
-    margin-bottom: 50px;
+    padding: 30px 35px;
+    margin-bottom: 6px;
   }
 }
 @media (min-width: 1440px) {
   .main-header {
     padding: 20px 0;
-    margin: 0 0 82px;
+    margin-top: -43px;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 60px;
     line-height: 60px;
   }
   .main-header--accent {
+    margin-bottom: 58px;
     padding: 0;
   }
 }
@@ -1264,7 +1319,7 @@ template {
   margin: 0 0 41px;
   text-align: left;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
 }
@@ -1272,9 +1327,9 @@ template {
 @media (min-width: 768px) {
   .main-text {
     padding: 20px 300px 30px 35px;
-    margin: 0 0 50px;
+    margin: 0 0 16px;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 30px;
   }
@@ -1287,6 +1342,7 @@ template {
   }
 }
 .program {
+  min-width: 320px;
   text-align: center;
   margin-bottom: 22px;
   color: #ffffff;
@@ -1314,7 +1370,7 @@ template {
   padding-top: 28px;
   margin: 0 0 23px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 33px;
   line-height: 36px;
   text-transform: none;
@@ -1323,7 +1379,7 @@ template {
 .program__text {
   margin: 0 0 10px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
@@ -1359,7 +1415,7 @@ template {
   .program__title {
     margin: 0 0 41px;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 56px;
     line-height: 60px;
     text-transform: none;
@@ -1369,7 +1425,7 @@ template {
   .program__text {
     margin: 0 0 66px;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
@@ -1378,14 +1434,14 @@ template {
   .program__image {
     margin: 0 0 -101px;
     position: relative;
-    left: 0px;
+    left: 0;
     top: -70px;
     z-index: -1;
   }
 
   .program__button {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 20px;
     padding: 12px 21px;
@@ -1432,7 +1488,7 @@ template {
   .program__text {
     margin: 0 0 70px;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
@@ -1449,7 +1505,7 @@ template {
 @media (min-width: 1440px) {
   .program__button {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 20px;
     margin-top: 95px;
@@ -1488,7 +1544,7 @@ template {
   padding-top: 6px;
   margin: 0 0 30px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-align: left;
@@ -1498,7 +1554,7 @@ template {
   margin: 0 0 20px;
   font-family: "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-transform: none;
@@ -1519,7 +1575,7 @@ template {
 
 .categories__link {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   left: -1px;
@@ -1577,7 +1633,7 @@ template {
     padding: 0;
     margin: 0 0 23px;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 34px;
     line-height: 36px;
     text-align: left;
@@ -1588,7 +1644,7 @@ template {
     padding-right: 265px;
     font-family: "Arial", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
   }
@@ -1608,7 +1664,7 @@ template {
   .categories__link {
     top: -6px;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 30px;
     border-top: none;
@@ -1620,8 +1676,8 @@ template {
   }
 
   .categories__link:hover::before {
-    top: 24px;
-    left: 133px;
+    top: 29px;
+    left: 129px;
   }
 }
 @media (min-width: 1440px) {
@@ -1677,7 +1733,7 @@ template {
 .advantages__title {
   margin: 0 0 38px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
 }
@@ -1714,7 +1770,7 @@ template {
   padding-left: 80px;
   font-family: "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-transform: none;
@@ -1813,6 +1869,7 @@ template {
   }
 }
 .before-after {
+  min-width: 320px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -1824,7 +1881,7 @@ template {
   padding-top: 25px;
   margin: 0 0 40px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   text-align: left;
@@ -1835,7 +1892,7 @@ template {
   margin: 0 0 20px;
   font-family: "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-align: left;
@@ -1877,7 +1934,7 @@ template {
   left: 16px;
   font-family: "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 12px;
   color: #444444;
@@ -1915,7 +1972,7 @@ template {
 
 .before-after__button {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   padding: 0;
@@ -1969,7 +2026,7 @@ template {
   .before-after__result {
     margin: -12px 0 65px;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 56px;
     line-height: 60px;
     padding: 0;
@@ -1980,7 +2037,7 @@ template {
     margin: 0 0 51px;
     font-family: "Arial", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
   }
@@ -2006,7 +2063,7 @@ template {
     margin: 0;
     padding-top: 8px;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 29px;
     text-align: right;
@@ -2023,7 +2080,7 @@ template {
 
   .before-after__number {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 30px;
     line-height: 37px;
   }
@@ -2046,14 +2103,14 @@ template {
 
   .before-after__button {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 30px;
     cursor: pointer;
-    border-bottom: 1px dotted #d9d9d9;
+    border-bottom: 1px dotted rgba(68, 68, 68, 0.2);
   }
   .before-after__button:hover {
-    border-bottom: 1px solid #d9d9d9;
+    border-bottom: 1px solid rgba(68, 68, 68, 0.2);
   }
   .before-after__button:active {
     border-bottom: 1px solid transparent;
@@ -2078,9 +2135,13 @@ template {
     border-radius: 50%;
     cursor: pointer;
     border: 1px solid #cdcdcd;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  }
+  .before-after__toggle:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
   }
   .before-after__toggle:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
     border: 1px solid #68b738;
   }
   .before-after__toggle::before {
@@ -2162,6 +2223,9 @@ template {
 
   .before-after__description {
     background-color: #f2f2f2;
+    left: 8px;
+    width: 127px;
+    padding: 2px 7px;
   }
 
   .before-after__progress {
@@ -2180,12 +2244,9 @@ template {
   .before-after__toggle {
     left: 190px;
   }
-
-  .before-after__description {
-    left: 8px;
-    width: 127px;
-    padding: 2px 7px;
-  }
+}
+.contacts {
+  min-width: 320px;
 }
 .contacts--background {
   background: #f2f2f2;
@@ -2204,7 +2265,7 @@ template {
   margin: 0;
   text-align: left;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
 }
@@ -2219,7 +2280,7 @@ template {
   margin: 0;
   font-family: "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-transform: none;
@@ -2262,7 +2323,7 @@ template {
     width: 25%;
     text-align: left;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 26px;
   }
@@ -2271,7 +2332,7 @@ template {
     padding: 45px 40px;
     width: 24%;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     text-align: right;
@@ -2279,7 +2340,7 @@ template {
 
   .contacts__address-text {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
   }
@@ -2337,7 +2398,7 @@ template {
 
 .page-footer__logo {
   text-align: center;
-  margin: 0 0 28px;
+  margin: 0 0 32px;
   padding-top: 39px;
 }
 
@@ -2357,7 +2418,7 @@ template {
   }
 
   .page-footer__wrapper {
-    padding: 42px 0;
+    padding: 37px 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -2424,21 +2485,21 @@ template {
 
 @media (min-width: 768px) {
   .social__list {
-    width: 140px;
+    width: 144px;
     margin: 0;
-    padding: 23px 77px;
+    padding: 22px 62px 26px 84px;
     border: none;
   }
 
   .social__icon {
-    width: 35px;
-    height: 26px;
+    width: 48px;
+    height: 22px;
   }
 }
 .copyright__text {
   font-family: "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
 }
@@ -2498,7 +2559,7 @@ template {
 
 .catalog__list {
   padding: 0;
-  margin: 0 0 30px;
+  margin: 0 0 35px;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -2506,14 +2567,15 @@ template {
 }
 
 .catalog__item {
-  padding: 23px 0 20px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.catalog__wrapper {
+  padding: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  position: relative;
-  border-top: 1px solid #e6e6e6;
 }
 
 .catalog__item:last-child {
@@ -2522,10 +2584,12 @@ template {
 
 @media (min-width: 768px) {
   .catalog {
-    width: 100%;
+    width: 708px;
+    margin: 0 auto;
   }
 
   .catalog__list {
+    margin-bottom: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -2533,26 +2597,30 @@ template {
   }
 
   .catalog__item {
-    padding: 161px 36px 35px;
-    margin: 90px 0 50px;
-    width: 246px;
-    border: 1px solid #f2f2f2;
+    margin-top: 150px;
+    border: none;
     background: #f2f2f2;
+  }
+
+  .catalog__wrapper {
+    position: relative;
+    padding: 128px 36px 35px;
+    width: 246px;
   }
 }
 @media (min-width: 1440px) {
   .catalog {
     width: 1220px;
+    margin-bottom: 85px;
   }
 
   .catalog__list {
     padding: 0;
   }
 
-  .catalog__item {
-    padding: 161px 40px 35px;
-    margin: 90px 0 50px;
-    width: 170px;
+  .catalog__wrapper {
+    padding: 180px 40px 35px;
+    width: 165px;
   }
 }
 .card__info {
@@ -2560,12 +2628,12 @@ template {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 0 0 20px;
+  margin: 0 0 16px;
 }
 
 .card__title {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #222222;
@@ -2584,7 +2652,8 @@ template {
 }
 
 .card__image-link {
-  width: 120px;
+  width: 140px;
+  padding-top: 13px;
 }
 
 .card__link {
@@ -2594,7 +2663,7 @@ template {
 .card__description {
   font-family: "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   text-transform: none;
@@ -2617,7 +2686,7 @@ template {
 .card__text {
   font-family: "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   text-transform: none;
@@ -2627,7 +2696,7 @@ template {
   margin: 0 0 21px;
   font-family: "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   text-transform: none;
@@ -2646,7 +2715,7 @@ template {
 
   .card__image-link {
     position: absolute;
-    bottom: 275px;
+    bottom: 262px;
     left: 0;
     width: 100%;
   }
@@ -2657,10 +2726,10 @@ template {
 
   .card__title {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    width: 130px;
+    width: 150px;
     margin: 0 auto;
     text-align: center;
   }
@@ -2668,7 +2737,7 @@ template {
     width: 150px;
     margin: 0 0 15px;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 22px;
   }
@@ -2712,10 +2781,19 @@ template {
 
   .card__info {
     width: 180px;
+    margin: 0 0 31px;
+  }
+
+  .card__title {
+    margin: -29px auto 7px;
+  }
+
+  .card__image-link {
+    bottom: 303px;
   }
 
   .card__button {
-    padding: 7px 35px;
+    padding: 11px 35px;
   }
 
   .card__icon--add {
@@ -2764,9 +2842,9 @@ template {
 .additional-catalog__title {
   width: 243px;
   padding: 0 20px 0 20px;
-  margin: 0 -20px 30px;
+  margin: 0 -20px 35px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   text-align: left;
@@ -2791,10 +2869,10 @@ template {
 
   .additional-catalog__title {
     width: 367px;
-    margin: 0 30px 80px;
+    margin: 0 0 80px;
     padding: 0 25px;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 36px;
     line-height: 36px;
   }
@@ -2818,7 +2896,7 @@ template {
   }
 
   .additional-catalog__title {
-    margin: 0 0 80px;
+    margin: 0 -31px 80px;
   }
 
   .additional-catalog__list {
@@ -2826,7 +2904,7 @@ template {
   }
 }
 .products-list__item {
-  padding: 13px 20px 20px;
+  padding: 13px 0 20px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -2839,6 +2917,8 @@ template {
 
 @media (min-width: 768px) {
   .products-list__item {
+    padding: 20px;
+    width: 669px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -2848,8 +2928,8 @@ template {
 }
 @media (min-width: 1440px) {
   .products-list__item {
-    width: 900px;
-    padding: 13px 2px 20px 2px;
+    width: 898px;
+    padding: 18px 2px 20px 2px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -2859,9 +2939,9 @@ template {
   }
 }
 .products-item__title {
-  margin: 0 0 13px;
+  margin: 0 0 9px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-align: left;
@@ -2869,13 +2949,13 @@ template {
 }
 
 .products-item__row {
-  margin: 0 0 15px;
+  margin: 0 0 13px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-family: "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   text-transform: none;
@@ -2884,12 +2964,20 @@ template {
 
 @media (min-width: 768px) {
   .products-item__row {
-    width: 250px;
+    width: 230px;
     text-align: right;
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .products-item__cell {
-    width: 120px;
+    width: 132px;
+  }
+  .products-item__cell--price {
+    width: 80px;
   }
 
   .products-item__cell-button {
@@ -2898,24 +2986,24 @@ template {
 }
 @media (min-width: 1440px) {
   .products-item__title {
-    width: 338px;
+    width: 285px;
     margin: 0;
   }
 
   .products-item__row {
     margin: 0;
-    width: 260px;
+    width: 288px;
   }
 
   .products-item__cell {
     width: 118px;
   }
   .products-item__cell--quantity {
-    width: 116px;
+    width: 137px;
     text-align: left;
   }
   .products-item__cell--price {
-    width: 50px;
+    width: 44px;
     text-align: left;
   }
 
@@ -2948,13 +3036,14 @@ template {
 .present__text {
   font-family: "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: none;
   color: #ffffff;
   width: 161px;
   margin: 0 auto;
+  padding-top: 14px;
 }
 
 @media (min-width: 768px) {

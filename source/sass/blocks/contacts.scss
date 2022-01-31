@@ -1,4 +1,6 @@
 .contacts {
+  min-width: 320px;
+
   &--background {
     background: $background-light;
   }
@@ -17,7 +19,7 @@
   margin: 0;
   text-align: left;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
 }
@@ -32,7 +34,7 @@
   margin: 0;
   font-family: "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-transform: none;
@@ -76,7 +78,7 @@
     width: 25%;
     text-align: left;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 26px;
   }
@@ -85,7 +87,7 @@
     padding: 45px 40px;
     width: 24%;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     text-align: right;
@@ -93,7 +95,7 @@
 
   .contacts__address-text {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
 

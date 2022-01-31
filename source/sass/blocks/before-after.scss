@@ -1,4 +1,5 @@
 .before-after {
+  min-width: 320px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -10,7 +11,7 @@
   padding-top: 25px;
   margin: 0 0 40px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   text-align: left;
@@ -21,7 +22,7 @@
   margin: 0 0 20px;
   font-family: "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-align: left;
@@ -63,7 +64,7 @@
   left: 16px;
   font-family: "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 12px;
   color: $paragraph-light;
@@ -101,7 +102,7 @@
 
 .before-after__button {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   padding: 0;
@@ -156,7 +157,7 @@
   .before-after__result {
     margin: -12px 0 65px;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 56px;
     line-height: 60px;
     padding: 0;
@@ -167,7 +168,7 @@
     margin: 0 0 51px;
     font-family: "Arial", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
   }
@@ -193,7 +194,7 @@
     margin: 0;
     padding-top: 8px;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 29px;
     text-align: right;
@@ -210,7 +211,7 @@
 
   .before-after__number {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 30px;
     line-height: 37px;
   }
@@ -233,14 +234,14 @@
 
   .before-after__button {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 30px;
     cursor: pointer;
-    border-bottom: 1px dotted $border-darker;
+    border-bottom: 1px dotted $paragraph-light-active;
 
     &:hover {
-      border-bottom: 1px solid $border-darker;
+      border-bottom: 1px solid $paragraph-light-active;
     }
 
     &:active {
@@ -267,9 +268,14 @@
     border-radius: 50%;
     cursor: pointer;
     border: 1px solid $radio-border;
-    box-shadow: 0 2px 5px 0 $color-text-active;
+    box-shadow: 0 1px 3px 0 $color-text-active;
+
+    &:hover {
+      box-shadow: 0 2px 4px 0 $color-text-active;
+    }
 
     &:active {
+      box-shadow: 0 3px 5px 0 $color-text-active;
       border: 1px solid $color-bottom;
     }
 
@@ -354,6 +360,9 @@
 
   .before-after__description {
     background-color: $background-light;
+    left: 8px;
+    width: 127px;
+    padding: 2px 7px;
   }
 
   .before-after__progress {
@@ -371,11 +380,5 @@
 
   .before-after__toggle {
     left: 190px;
-  }
-
-  .before-after__description {
-    left: 8px;
-    width: 127px;
-    padding: 2px 7px;
   }
 }

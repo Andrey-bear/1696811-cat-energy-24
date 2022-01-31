@@ -36,6 +36,7 @@ const html = () => {
 }
 
 // Scripts
+
 const scripts = () => {
   return gulp.src('source/js/*.js')
     .pipe(terser())
@@ -117,7 +118,6 @@ const server = (done) => {
   done();
 }
 
-
 // Reload
 
 const reload = (done) => {
@@ -152,7 +152,6 @@ export const build = gulp.series(
 
 // Default
 
-
 export default gulp.series(
   clean,
   copy,
@@ -170,4 +169,3 @@ export default gulp.series(
     server,
     watcher
   ));
-

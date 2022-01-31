@@ -3,7 +3,7 @@
   margin: 0 0 41px;
   text-align: left;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
 }
@@ -11,9 +11,9 @@
 @media (min-width: $tablet-width) {
   .main-text {
     padding: 20px 300px 30px 35px;
-    margin: 0 0 50px;
+    margin: 0 0 16px;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 30px;
   }

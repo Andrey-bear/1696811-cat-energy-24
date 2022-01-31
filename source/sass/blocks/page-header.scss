@@ -68,10 +68,6 @@
   }
 }
 
-.page-header__toggle--nojs .page-header__toggle {
-  display: none;
-}
-
 .page-header__link-logo:hover {
   opacity: 0.8;
 }
@@ -85,8 +81,8 @@
     margin: 0 0 32px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: nowrap;
+    justify-content: flex-end;
+    flex-wrap: wrap;
     align-items: center;
 
     &--peculiarity {

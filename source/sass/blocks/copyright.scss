@@ -1,4 +1,13 @@
+.copyright__text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
 .copyright__link {
+  text-transform: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -44,6 +53,6 @@
   }
 
   .copyright__text {
-    padding-right: 35px;
+    padding-right: 23px;
   }
 }

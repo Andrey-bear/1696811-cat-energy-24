@@ -1,4 +1,6 @@
 .contacts {
+  min-width: 320px;
+
   &--background {
     background: $background-light;
   }
@@ -17,7 +19,7 @@
   margin: 0;
   text-align: left;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
 }
@@ -32,7 +34,7 @@
   margin: 0;
   font-family: "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-transform: none;
@@ -63,7 +65,7 @@
   }
 
   .contacts__cooperation {
-    padding: 0;
+    padding: 13px 15px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -76,22 +78,27 @@
     width: 25%;
     text-align: left;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
-    line-height: 21px;
+    line-height: 26px;
   }
 
   .contacts__address {
     padding: 45px 40px;
     width: 24%;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     text-align: right;
   }
 
   .contacts__address-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
     &--street {
       margin: 0 0 20px;
     }
@@ -112,18 +119,18 @@
 
   .contacts__cooperation {
     margin: 0;
-    padding: 25px 24px;
+    padding: 13px 19px;
     justify-content: space-evenly;
     background-color: $main-background;
     position: absolute;
     left: 110px;
     top: 95px;
-    width: 515px;
+    width: 526px;
     z-index: 2;
   }
 
   .contacts__title {
-    width: 38%;
+    width: 29%;
   }
 
   .contacts__address {

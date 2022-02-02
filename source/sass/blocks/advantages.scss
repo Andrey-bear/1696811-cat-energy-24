@@ -1,13 +1,13 @@
 .advantages {
   text-align: left;
   text-transform: none;
-  margin-bottom: 36px;
+  margin-bottom: 26px;
 }
 
 .advantages__title {
   margin: 0 0 38px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
 }
@@ -44,12 +44,12 @@
 }
 
 .advantages__text {
-  margin: 0 0 20px;
+  margin: 0 0 25px;
   padding-top: 2px;
   padding-left: 80px;
   font-family: "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-transform: none;
@@ -62,13 +62,14 @@
   }
 
   .advantages__title {
-    margin: 0 0 63px;
+    margin: 0 0 72px;
     font-style: normal;
-    font-size: 60px;
+    font-size: 56px;
     line-height: 60px;
   }
 
   .advantages__list {
+    min-width: 634px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -88,9 +89,9 @@
   }
 
   .advantages__item {
-    padding-top: 110px;
+    padding-top: 111px;
     min-width: 230px;
-    min-height: 200px;
+    min-height: 206px;
 
     &::before {
       counter-increment: myCounter;
@@ -98,11 +99,11 @@
       color: $background-light;
       position: absolute;
       z-index: -1;
-      margin-left: 104px;
-      margin-top: -150px;
+      margin-left: 113px;
+      margin-top: -26px;
       font-style: normal;
-      font-size: 280px;
-      line-height: 280px;
+      font-size: 273px;
+      line-height: 32px;
     }
 
     &--1 {
@@ -136,16 +137,20 @@
     counter-reset: myCounter;
   }
 
-  .advantages__item::before {
-    counter-increment: myCounter;
-    content: counter(myCounter);
-    color: $background-light;
-    position: absolute;
-    z-index: -1;
-    margin-left: 104px;
-    margin-top: -150px;
-    font-style: normal;
-    font-size: 280px;
-    line-height: 280px;
+  .advantages__item {
+    min-height: 183px;
+
+    &::before {
+      counter-increment: myCounter;
+      content: counter(myCounter);
+      color: $background-light;
+      position: absolute;
+      z-index: -1;
+      margin-left: 104px;
+      margin-top: -150px;
+      font-style: normal;
+      font-size: 280px;
+      line-height: 280px;
+    }
   }
 }

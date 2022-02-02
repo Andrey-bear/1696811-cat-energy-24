@@ -1,4 +1,5 @@
 .before-after {
+  min-width: 320px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -8,9 +9,9 @@
 
 .before-after__result {
   padding-top: 25px;
-  margin: 0 0 30px;
+  margin: 0 0 40px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   text-align: left;
@@ -18,10 +19,10 @@
 }
 
 .before-after__text {
-  margin: 0 0 25px;
+  margin: 0 0 20px;
   font-family: "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-align: left;
@@ -30,7 +31,7 @@
 }
 
 .before-after__stats {
-  margin: 0 0 26px;
+  margin: 0 0 33px;
   width: 280px;
 }
 
@@ -63,7 +64,7 @@
   left: 16px;
   font-family: "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 12px;
   color: $paragraph-light;
@@ -72,7 +73,7 @@
   position: absolute;
   bottom: -15px;
   background-color: $additional-background;
-  padding: 2px 16px;
+  padding: 1px 16px;
 }
 
 .before-after__expenses {
@@ -83,11 +84,11 @@
 }
 
 .before-after__switch {
-  margin: 0 0 25px;
+  margin: 0 0 47px;
 }
 
 .before-after__image {
-  margin: 0 0 23px;
+  margin: 0 0 15px;
 }
 
 .before-after__block {
@@ -96,12 +97,12 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 190px;
+  width: 200px;
 }
 
 .before-after__button {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   padding: 0;
@@ -144,7 +145,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 570px;
+      top: 564px;
       left: 0;
       right: 0;
       height: 100%;
@@ -154,28 +155,30 @@
   }
 
   .before-after__result {
-    margin: 0 0 60px;
+    margin: -12px 0 65px;
     font-style: normal;
-    font-weight: normal;
-    font-size: 60px;
+    font-weight: 400;
+    font-size: 56px;
     line-height: 60px;
+    padding: 0;
   }
 
   .before-after__text {
-    margin: 0 0 54px;
+    max-width: 700px;
+    margin: 0 0 51px;
     font-family: "Arial", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
   }
 
   .before-after__stats {
-    width: 393px;
+    width: 366px;
   }
 
   .before-after__wrapper {
-    margin-bottom: 40px;
+    margin-bottom: 53px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -183,34 +186,39 @@
   }
 
   .before-after__item {
-    width: 173px;
+    width: 160px;
   }
 
   .before-after__expenses {
     width: 185px;
     margin: 0;
-    padding-top: 15px;
+    padding-top: 8px;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 29px;
     text-align: right;
   }
 
   .before-after__switch {
     min-width: 708px;
+    margin: 0 0 5px;
+  }
+
+  .before-after__image {
+    margin: 0 0 27px;
   }
 
   .before-after__number {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 30px;
     line-height: 37px;
   }
 
   .before-after__description {
-    top: 57px;
-    left: 14px;
+    top: 60px;
+    left: 8px;
     width: 128px;
     padding: 2px 8px;
     font-style: 400;
@@ -220,20 +228,20 @@
   }
 
   .before-after__block {
-    width: 591px;
+    width: 575px;
     position: relative;
   }
 
   .before-after__button {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 30px;
     cursor: pointer;
-    border-bottom: 1px dotted $border-darker;
+    border-bottom: 1px dotted $paragraph-light-active;
 
     &:hover {
-      border-bottom: 1px solid $border-darker;
+      border-bottom: 1px solid $paragraph-light-active;
     }
 
     &:active {
@@ -260,9 +268,14 @@
     border-radius: 50%;
     cursor: pointer;
     border: 1px solid $radio-border;
-    box-shadow: 0 2px 5px 0 $color-text-active;
+    box-shadow: 0 1px 3px 0 $color-text-active;
+
+    &:hover {
+      box-shadow: 0 2px 4px 0 $color-text-active;
+    }
 
     &:active {
+      box-shadow: 0 3px 5px 0 $color-text-active;
       border: 1px solid $color-bottom;
     }
 
@@ -283,7 +296,7 @@
 
 @media (min-width: $desktop-width) {
   .before-after {
-    margin: 0 0 30px;
+    margin: 0 0 11px;
     display: flex;
     flex-direction: row;
     position: relative;
@@ -292,7 +305,7 @@
   .before-after::before {
     content: "";
     position: absolute;
-    top: 186px;
+    top: 125px;
     left: 0;
     right: 0;
     height: 100%;
@@ -309,7 +322,7 @@
 
   .before-after__result {
     margin-bottom: 146px;
-    padding: 76px 0 0;
+    padding: 0;
   }
 
   .before-after__text {
@@ -328,19 +341,28 @@
     text-align: left;
   }
 
+  .before-after__switch {
+    margin: 0 0 61px;
+  }
+
   .before-after__block {
     position: relative;
-    left: 55px;
-    width: 545px;
+    left: 62px;
+    width: 573px;
   }
 
   .before-after__image {
     position: relative;
-    left: 90px;
+    top: -54px;
+    left: 61px;
+    margin: 0 0 -30px;
   }
 
   .before-after__description {
     background-color: $background-light;
+    left: 8px;
+    width: 127px;
+    padding: 2px 7px;
   }
 
   .before-after__progress {
@@ -348,14 +370,15 @@
   }
 
   .before-after__stats {
-    width: 383px;
+    width: 367px;
+    margin: 0 0 50px;
   }
 
   .before-after__value {
-    padding-left: 63px;
+    padding-left: 48px;
   }
 
   .before-after__toggle {
-    left: 230px;
+    left: 190px;
   }
 }

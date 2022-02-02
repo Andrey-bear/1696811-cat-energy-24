@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 10px 0 17px 0;
+  padding: 10px 0 15px 0;
 }
 
 .page-header__toggle {
@@ -31,11 +31,11 @@
   background-color: $main-background;
 }
 
-.page-header__toggle--closed {
+.page-header__toggle--opened {
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -1px;
     left: 0;
     width: 24px;
     height: 2px;
@@ -45,7 +45,7 @@
   }
 }
 
-.page-header__toggle--opened {
+.page-header__toggle--closed {
   &::before,
   &::after {
     content: "";
@@ -68,10 +68,6 @@
   }
 }
 
-.page-header__toggle--nojs .page-header__toggle {
-  display: none;
-}
-
 .page-header__link-logo:hover {
   opacity: 0.8;
 }
@@ -81,23 +77,22 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    margin: 0 auto 30px;
+    padding-top: 25px;
+    width: 708px;
+  }
+
   .page-header__top {
-    margin: 0 0 70px;
+    margin: 0 auto 32px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: nowrap;
     align-items: center;
 
     &--peculiarity {
       margin: 0;
     }
-  }
-
-  .page-header {
-    margin-bottom: 30px;
-    padding-top: 25px;
-    width: 708px;
   }
 
   .page-header__wrapper {
@@ -110,6 +105,10 @@
     align-items: center;
   }
 
+  .page-header__logo {
+    width: 174px;
+  }
+
   .page-header__toggle {
     display: none;
   }
@@ -118,20 +117,32 @@
 @media (min-width: $desktop-width) {
   .page-header {
     padding: 0;
-    width: 1220px;
-    color: $main-background;
-    background-color: transparent;
+    margin: 0 0 82px;
+    width: 100%;
+
+    &--background {
+      height: 695px;
+      color: $main-background;
+      background-color: transparent;
+      background-image: url("../img/background-cat-tablet.jpg"), linear-gradient(to right, transparent 50%, $background-cat 50%);
+      background-repeat: no-repeat;
+      background-position: right bottom 90%, center;
+    }
   }
 
   .page-header__top {
-    margin: 0;
+    margin: 0 auto;
     z-index: 1;
     background-color: transparent;
   }
 
   .page-header__wrapper {
     width: 100%;
-    padding-top: 51px;
-    margin-bottom: 80px;
+    padding-top: 54px;
+    margin-bottom: 83px;
+  }
+
+  .page-header__logo {
+    width: 202px;
   }
 }

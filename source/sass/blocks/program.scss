@@ -1,4 +1,5 @@
 .program {
+  min-width: 320px;
   text-align: center;
   margin-bottom: 22px;
   color: $main-background;
@@ -9,11 +10,12 @@
 }
 
 .program__wrapper {
-  min-height: 264px;
+  min-height: 300px;
   background-image: url("../img/background-cat.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
   background-color: $background-cat;
+  background-position: center;
+
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/background-cat@2x.jpg");
@@ -22,11 +24,11 @@
 }
 
 .program__title {
-  padding-top: 30px;
-  margin: 0 0 24px;
+  padding-top: 28px;
+  margin: 0 0 23px;
   font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
+  font-weight: 400;
+  font-size: 33px;
   line-height: 36px;
   text-transform: none;
 }
@@ -34,7 +36,7 @@
 .program__text {
   margin: 0 0 10px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
@@ -42,13 +44,13 @@
 
 .program__button {
   left: 0;
-  top: 300px;
+  top: 303px;
   position: relative;
 }
 
 .program__image {
-  margin-top: -95px;
-  margin-bottom: 30px;
+  margin-top: -134px;
+  margin-bottom: 41px;
 }
 
 @media (min-width: $tablet-width) {
@@ -62,7 +64,7 @@
   }
 
   .program__wrapper {
-    width: 540px;
+    width: 530px;
     margin: 0 auto;
     background: none;
   }
@@ -70,36 +72,36 @@
   .program__title {
     margin: 0 0 41px;
     font-style: normal;
-    font-weight: normal;
-    font-size: 60px;
+    font-weight: 400;
+    font-size: 56px;
     line-height: 60px;
     text-transform: none;
     color: $color-text;
   }
 
   .program__text {
-    margin: 0 0 50px;
+    margin: 0 0 66px;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
   }
 
   .program__image {
-    margin: 0 0 -70px;
+    margin: 0 0 -101px;
     position: relative;
-    left: 5px;
-    top: -68px;
+    left: 0;
+    top: -70px;
     z-index: -1;
   }
 
   .program__button {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 20px;
-    padding: 10px 38px;
+    padding: 12px 21px;
     width: 203px;
     position: relative;
     left: 0;
@@ -109,7 +111,7 @@
 
 @media (min-width: $desktop-width) {
   .program {
-    margin: 0 0 160px;
+    width: 1220px;
     display: flex;
     flex-direction: column;
     padding-left: 80px;
@@ -119,31 +121,12 @@
 
   .program__wrapper {
     margin: 0 0 125px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: -200px;
-      right: -110px;
-      width: 60%;
-      height: 699px;
-      background-color: $background-cat;
-      background-image: url("../img/background-cat-tablet.jpg");
-      background-repeat: no-repeat;
-      background-size: 100%;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/background-cat-tablet@2x.jpg");
-        background-size: 732px auto;
-      }
-    }
   }
 
   .program__text {
     margin: 0 0 70px;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
@@ -151,19 +134,19 @@
 
   .program__image {
     position: absolute;
-    top: -61px;
-    left: 437px;
+    top: -54px;
+    left: 488px;
     margin: auto;
   }
 
   .program__button {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 20px;
     margin-top: 95px;
-    padding: 10px 40px;
+    padding: 11px 20px;
     position: relative;
-    top: -15px;
+    top: -3px;
   }
 }

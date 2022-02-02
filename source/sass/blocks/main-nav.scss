@@ -1,6 +1,7 @@
 .main-nav {
   min-width: 320px;
   position: absolute;
+  left: 0;
   z-index: 1;
   background: $main-background;
 
@@ -48,6 +49,7 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
+    position: static;
     min-width: min-content;
     background: none;
 
@@ -61,7 +63,7 @@
   }
 
   .main-nav__list {
-    width: 435px;
+    width: 446px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -73,7 +75,6 @@
     font-size: 18px;
     line-height: 14px;
     text-align: center;
-    margin: 0 -15px;
     padding: 10px 8px;
     border: none;
     position: relative;
@@ -106,7 +107,7 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__list {
-    width: 471px;
+    width: 505px;
     margin-bottom: 26px;
   }
 

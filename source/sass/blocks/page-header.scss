@@ -31,7 +31,7 @@
   background-color: $main-background;
 }
 
-.page-header__toggle--closed {
+.page-header__toggle--opened {
   &::before {
     content: "";
     position: absolute;
@@ -45,7 +45,7 @@
   }
 }
 
-.page-header__toggle--opened {
+.page-header__toggle--closed {
   &::before,
   &::after {
     content: "";
@@ -77,23 +77,22 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    margin: 0 auto 30px;
+    padding-top: 25px;
+    width: 708px;
+  }
+
   .page-header__top {
-    margin: 0 0 32px;
+    margin: 0 auto 32px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
 
     &--peculiarity {
       margin: 0;
     }
-  }
-
-  .page-header {
-    margin-bottom: 30px;
-    padding-top: 25px;
-    width: 708px;
   }
 
   .page-header__wrapper {
@@ -118,13 +117,21 @@
 @media (min-width: $desktop-width) {
   .page-header {
     padding: 0;
-    width: 1220px;
-    color: $main-background;
-    background-color: transparent;
+    margin: 0 0 82px;
+    width: 100%;
+
+    &--background {
+      height: 695px;
+      color: $main-background;
+      background-color: transparent;
+      background-image: url("../img/background-cat-tablet.jpg"), linear-gradient(to right, transparent 50%, $background-cat 50%);
+      background-repeat: no-repeat;
+      background-position: right bottom 90%, center;
+    }
   }
 
   .page-header__top {
-    margin: 0;
+    margin: 0 auto;
     z-index: 1;
     background-color: transparent;
   }

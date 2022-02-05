@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 0 0 16px;
+  margin: 0 0 18px;
 }
 
 .card__title {
@@ -14,7 +14,7 @@
   color: $color-text-title;
   text-align: left;
   width: 90px;
-  margin: 0 0 13px;
+  margin: 0 0 9px;
 
   &--add {
     margin: 0 0 8px;
@@ -56,8 +56,8 @@
 
 .card__icon {
   &--add {
-    padding-top: 25px;
-    margin-bottom: 25px;
+    padding-top: 3px;
+    margin-bottom: 21px;
   }
 }
 
@@ -71,18 +71,12 @@
   color: $paragraph-light;
 
   &--add {
-    margin: 0 0 21px;
-    font-family: "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    text-transform: none;
-    color: $paragraph-light;
+    margin: 0 0 22px;
   }
 }
 
 .card__button {
+  padding: 10px 72px 11px;
   width: 100%;
 }
 
@@ -103,6 +97,7 @@
 
   .card__info {
     width: 100%;
+    margin: 0 0 30px;
   }
 
   .card__title {
@@ -111,7 +106,7 @@
     font-size: 20px;
     line-height: 24px;
     width: 150px;
-    margin: 0 auto;
+    margin: 0 auto 13px;
     text-align: center;
 
     &--add {

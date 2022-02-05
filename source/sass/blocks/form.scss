@@ -1,10 +1,11 @@
 .form__fieldset {
   padding: 0;
-  margin: 0 0 27px;
+  margin: 0 0 26px;
   border: none;
 
   &--border {
-    padding: 20px 0;
+    padding: 29px 0;
+    margin-bottom: 20px;
     border-top: 1px solid $bottomcatalog-hover;
     border-bottom: 1px solid $bottomcatalog-hover;
   }
@@ -12,12 +13,18 @@
 
 .form__block-button {
   padding: 0 20px;
-  margin-bottom: 25px;
+  margin-bottom: 32px;
 }
 
 .form__button {
   border: none;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 .form__necessarily {
@@ -32,10 +39,10 @@
 
 @media (min-width: $tablet-width) {
   .form__fieldset {
-    margin: 0 0 50px;
+    margin: 0 0 48px;
 
     &--border {
-      margin: 0 auto;
+      margin: 0 auto 69px;
       padding: 0;
       max-width: 624px;
       border: 1px solid $bottomcatalog-hover;
@@ -67,7 +74,7 @@
   }
 
   .form__button {
-    margin: 0 0 30px;
+    margin: 0 0 70px;
     width: 244px;
     padding: 25px;
     font-style: normal;
@@ -116,18 +123,18 @@
     }
 
     &--changes-radio {
-      width: 484px;
-      padding: 26px 35px;
+      width: 500px;
+      padding: 28px 35px;
     }
   }
 
   .form__block-button {
     max-width: 1220px;
-    padding: 20px 120px;
+    padding: 0;
   }
 
   .form__button {
-    width: 512px;
+    width: 567px;
   }
 
   .form__necessarily {

@@ -10,12 +10,14 @@
 }
 
 .page-header__wrapper {
+  margin: 0 auto;
+  width: 283px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 10px 0 15px 0;
+  padding: 11px 0 14px;
 }
 
 .page-header__toggle {
@@ -24,47 +26,51 @@
   right: 0;
   z-index: 2;
   display: block;
-  width: 24px;
+  width: 27px;
   height: 16px;
   cursor: pointer;
   border: none;
   background-color: $main-background;
-}
 
-.page-header__toggle--opened {
-  &::before {
-    content: "";
-    position: absolute;
-    top: -1px;
-    left: 0;
-    width: 24px;
-    height: 2px;
-    background-color: $color-text;
-    box-shadow: 0 8px 0 0 $color-text, 0 16px 0 0 $color-text;
-    transition: all 0.6s ease 0s;
-  }
-}
-
-.page-header__toggle--closed {
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 7px;
-    left: 0;
-    width: 25px;
-    height: 2px;
-    background-color: $color-text;
-    transition: all 0.6s ease 0s;
+  &--opened {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -1px;
+      left: 0;
+      width: 24px;
+      height: 2px;
+      background-color: $color-text;
+      box-shadow: 0 8px 0 0 $color-text, 0 16px 0 0 $color-text;
+      transition: all 0.6s ease 0s;
+    }
   }
 
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
+  &--closed {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: 0;
+      width: 25px;
+      height: 2px;
+      background-color: $color-text;
+      transition: all 0.6s ease 0s;
+   }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
   }
 
-  &::after {
-    transform: rotate(-45deg);
+  &--nojs {
+    display: none;
   }
 }
 
@@ -78,12 +84,13 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    margin: 0 auto 30px;
+    margin: 0 auto 25px;
     padding-top: 25px;
     width: 708px;
   }
 
   .page-header__top {
+    width: 709px;
     margin: 0 auto 32px;
     display: flex;
     flex-direction: row;
@@ -131,6 +138,7 @@
   }
 
   .page-header__top {
+    width: 1220px;
     margin: 0 auto;
     z-index: 1;
     background-color: transparent;
@@ -139,10 +147,14 @@
   .page-header__wrapper {
     width: 100%;
     padding-top: 54px;
-    margin-bottom: 83px;
+    margin-bottom: 79px;
   }
 
   .page-header__logo {
+    width: 202px;
+  }
+
+  .page-header__link-logo {
     width: 202px;
   }
 }

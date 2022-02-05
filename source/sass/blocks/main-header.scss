@@ -3,7 +3,7 @@
   padding: 28px 0 0;
   font-style: normal;
   font-weight: 400;
-  font-size: 33px;
+  font-size: 36px;
   line-height: 36px;
   text-transform: none;
   text-align: left;
@@ -11,15 +11,15 @@
 
 @media (min-width: $tablet-width) {
   .main-header {
-    padding: 31px 0;
+    padding: 37px 0;
     margin: 0 0 5px;
     font-style: normal;
     font-weight: 400;
-    font-size: 56px;
+    font-size: 60px;
     line-height: 60px;
 
     &--accent {
-      padding: 30px 35px;
+      padding: 35px 36px 30px;
       margin-bottom: 6px;
     }
   }
@@ -35,7 +35,8 @@
     line-height: 60px;
 
     &--accent {
-      margin-bottom: 58px;
+      margin-top: -90px;
+      margin-bottom: 56px;
       padding: 0;
     }
   }

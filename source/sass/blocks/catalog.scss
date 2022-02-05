@@ -4,7 +4,7 @@
 
 .catalog__list {
   padding: 0;
-  margin: 0 0 35px;
+  margin: 0 0 24px;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -16,7 +16,7 @@
 }
 
 .catalog__wrapper {
-  padding: 20px;
+  padding: 20px 20px 26px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -49,7 +49,7 @@
 
   .catalog__wrapper {
     position: relative;
-    padding: 128px 36px 35px;
+    padding: 128px 39px 35px;
     width: 246px;
   }
 }

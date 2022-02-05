@@ -10,7 +10,7 @@
 }
 
 .program__wrapper {
-  min-height: 300px;
+  min-height: 302px;
   background-image: url("../img/background-cat.jpg");
   background-repeat: no-repeat;
   background-color: $background-cat;
@@ -26,9 +26,10 @@
 .program__title {
   padding-top: 28px;
   margin: 0 0 23px;
+  font-family: "Oswald","Arial",sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 33px;
+  font-size: 36px;
   line-height: 36px;
   text-transform: none;
 }
@@ -44,13 +45,13 @@
 
 .program__button {
   left: 0;
-  top: 303px;
+  top: 304px;
   position: relative;
 }
 
 .program__image {
-  margin-top: -134px;
-  margin-bottom: 41px;
+  margin-top: -135px;
+  margin-bottom: 38px;
 }
 
 @media (min-width: $tablet-width) {
@@ -64,22 +65,25 @@
   }
 
   .program__wrapper {
-    width: 530px;
+    width: 536px;
+    padding-left: 2px;
     margin: 0 auto;
     background: none;
   }
 
   .program__title {
     margin: 0 0 41px;
+    font-family: "Oswald","Arial",sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 56px;
+    font-size: 60px;
     line-height: 60px;
     text-transform: none;
     color: $color-text;
   }
 
   .program__text {
+    padding-left: 2px;
     margin: 0 0 66px;
     font-style: normal;
     font-weight: 400;
@@ -92,7 +96,7 @@
     margin: 0 0 -101px;
     position: relative;
     left: 0;
-    top: -70px;
+    top: -73px;
     z-index: -1;
   }
 
@@ -101,10 +105,9 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
-    padding: 12px 21px;
-    width: 203px;
+    padding: 11px 19px;
     position: relative;
-    left: 0;
+    left: 4px;
     top: 0;
   }
 }
@@ -114,7 +117,7 @@
     width: 1220px;
     display: flex;
     flex-direction: column;
-    padding-left: 80px;
+    padding-left: 156px;
     color: $color-text;
     text-align: left;
   }
@@ -124,6 +127,7 @@
   }
 
   .program__text {
+    padding: 0;
     margin: 0 0 70px;
     font-style: normal;
     font-weight: 400;
@@ -135,7 +139,7 @@
   .program__image {
     position: absolute;
     top: -54px;
-    left: 488px;
+    left: 526px;
     margin: auto;
   }
 
@@ -145,8 +149,9 @@
     font-size: 20px;
     line-height: 20px;
     margin-top: 95px;
-    padding: 11px 20px;
+    padding: 12px 27px;
     position: relative;
-    top: -3px;
+    top: -2px;
+    left: 0;
   }
 }

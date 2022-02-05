@@ -6,13 +6,19 @@
   background: $main-background;
 
   &--opened {
+    height: 199px;
     width: 100%;
     display: block;
   }
-}
 
-.main-nav--closed .main-nav__item {
-  display: none;
+  &--closed {
+    display: none;
+  }
+
+  &--nojs {
+    position: inherit;
+    display: block;
+  }
 }
 
 .main-nav__list {
@@ -34,7 +40,7 @@
 }
 
 .main-nav__link {
-  padding: 22px 40px 22.5px;
+  padding: 22px 40px 23px;
   display: block;
   color: $color-text;
 }
@@ -50,20 +56,20 @@
 @media (min-width: $tablet-width) {
   .main-nav {
     position: static;
-    min-width: min-content;
+    min-width: 453px;
     background: none;
 
     &--opened {
       width: min-content;
     }
-  }
 
-  .main-nav--closed .main-nav__item {
-    display: block;
+    &--closed {
+      display: block;
+    }
   }
 
   .main-nav__list {
-    width: 446px;
+    width: 467px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -71,11 +77,13 @@
   }
 
   .main-nav__item {
+    font-family: "Oswald","Arial",sans-serif;
+    font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 14px;
+    line-height: 24px;
     text-align: center;
-    padding: 10px 8px;
+    padding: 10px 15px 10px 11px;
     border: none;
     position: relative;
   }
@@ -96,7 +104,7 @@
         content: "";
         position: absolute;
         right: 0;
-        top: 28px;
+        top: 32px;
         left: 0;
         height: 2px;
         background: $color-bottom;
@@ -106,8 +114,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav {
+    min-width: 480px;
+  }
+
   .main-nav__list {
-    width: 505px;
+    width: 481px;
     margin-bottom: 26px;
   }
 
@@ -117,6 +129,7 @@
     font-size: 20px;
     line-height: 30px;
     text-align: center;
+    padding: 7px 1px 11px 1px;
   }
 
   .main-nav__link {
@@ -127,7 +140,7 @@
         content: "";
         position: absolute;
         right: 0;
-        top: 35px;
+        top: 37px;
         left: 0;
         height: 2px;
         background: $color-bottom;
@@ -143,7 +156,7 @@
         content: "";
         position: absolute;
         right: 0;
-        top: 35px;
+        top: 37px;
         left: 0;
         height: 2px;
         background-color: $main-background;

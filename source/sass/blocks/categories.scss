@@ -69,8 +69,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 23px;
-    left: 102px;
+    top: 22px;
+    right: -50px;
     width: 50px;
     height: 15px;
     background-image: url("../img/arrow.svg");
@@ -83,7 +83,7 @@
     content: "";
     position: absolute;
     top: 22px;
-    left: 102px;
+    right: -50px;
     width: 50px;
     height: 15px;
     background-image: url("../img/arrow-big.svg");
@@ -159,14 +159,14 @@
 
     &::before {
       top: 29px;
-      left: 133px;
+      right: -56px;
     }
   }
 
   .categories__link:hover {
     &::before {
       top: 29px;
-      left: 129px;
+      right: -56px;
     }
   }
 }
@@ -209,7 +209,13 @@
     background-position: 28% 75%;
 
     &::before {
-      left: 136px;
+      right: -59px;
+    }
+
+    .categories__link:hover {
+      &::before {
+        right: -59px;
+      }
     }
   }
 

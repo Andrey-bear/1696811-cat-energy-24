@@ -6,6 +6,12 @@
   &--add-list {
     margin-bottom: 15px;
   }
+
+  &--changes3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
 .fields__item {
@@ -61,6 +67,10 @@
   height: 28px;
   border: 1px solid $radio-borderhover;
   border-radius: 50%;
+}
+
+.fields__input--radio:focus + label::before {
+  outline: 1px solid $radio-borderhover;
 }
 
 .fields__input--radio:disabled + label::before {
@@ -127,6 +137,10 @@
   border: 1px solid $radio-borderhover;
 }
 
+.fields__input--checkbox:focus + label::before {
+  outline: 1px solid $radio-borderhover;
+}
+
 .fields__input--checkbox:disabled + label::before {
   content: "";
   position: absolute;
@@ -154,11 +168,13 @@
 
   &--radio {
     color: $color-text-title;
+    white-space: pre-wrap;
   }
 
   &--checkbox {
     padding: 5px 10px 1px 45px;
     color: $color-text;
+    white-space: pre-wrap;
   }
 }
 
@@ -178,11 +194,13 @@
   }
 
   &:focus {
-    border: 2px solid $paragraph-light;
+    outline: 1px solid $paragraph-light;
+    border-color: $paragraph-light;
   }
 
   &:invalid {
-    border: 2px solid $input-error;
+    outline: 1px solid $input-error;
+    border-color:  $input-error;
   }
 }
 
@@ -329,10 +347,16 @@
 
   .fields__input--radio:hover + label::before {
     top: -5px;
+    left: -4px;
+    width: 37px;
+    height: 37px;
   }
 
-  .fields__input--radio:active + label::before {
+  .fields__input--radio:disabled + label::before {
     top: -5px;
+    left: -4px;
+    width: 37px;
+    height: 37px;
   }
 
   .fields__input--radio:checked + label::after {
@@ -342,7 +366,7 @@
     height: 18px;
   }
 
-  .fieldset__input--radio:checked:active + label::after {
+  .fieldset__input--radio:checked:disabled + label::after {
     top: 0;
   }
 
@@ -364,7 +388,7 @@
     height: 36px;
   }
 
-  .fields__input--checkbox:active + label::before {
+  .fields__input--checkbox:disabled + label::before {
     top: 4px;
     left: -6px;
     width: 36px;
@@ -380,6 +404,7 @@
   .fields__list {
     &--changes3 {
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
     }
 
@@ -391,6 +416,10 @@
   .fields__item {
     &--transformation {
       width: 567px;
+    }
+
+    &--info {
+      margin-bottom: 0;
     }
   }
 

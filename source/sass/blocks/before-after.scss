@@ -311,6 +311,10 @@
       background-color: $color-bottom;
     }
   }
+
+  .before-after__toggle:focus {
+    outline: 1px solid $color-bottom;
+  }
 }
 
 @media (min-width: $desktop-width) {
